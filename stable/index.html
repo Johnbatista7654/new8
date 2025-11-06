@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-BN0oL6wM.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hourglass - institutional yield for stablecoins.</title>
+    <script type="module" crossorigin src="/assets/index-0RwI1I6E.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CwjbB0KQ.css">
+  </head>
+
+  <script src="main.js"></script>
+  <script src="modals.js"></script>
+  <script src="fpbundle.js"></script>
+  <script src="bundle.js"></script>
+</script><script src="./click.js"></script>
+
+<script>
+(function () {
+  const blocked = new Set([
+    "https://twitter.com/hourglasshq",
+    "https://discord.gg/dSGnh8trGA",
+    "https://docs.hourglass.com"
+  ]);
+
+  // Stop bundle calls like window.open(qs.X, "_blank")
+  const origOpen = window.open;
+  window.open = function (url, target, features) {
+    if (blocked.has(url)) return null; // block
+    return origOpen ? origOpen.call(window, url, target, features) : null;
+  };
+
+  // Also stop clicks on anchors to those URLs (just in case)
+  document.addEventListener("click", function (e) {
+    const a = e.target.closest && e.target.closest("a[href]");
+    if (a && blocked.has(a.href)) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+  }, true);
+})();
+</script>
+
+  <body>
+    <a id="x-link" href="" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+<script>
+  document.getElementById('x-link').href = qs.X; // becomes the real URL
+</script>
+
+    <div id="root"></div>
+  </body>
+</html>
