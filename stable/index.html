@@ -22,8 +22,202 @@
   <link as="script" crossorigin="" href="" rel="modulepreload"/>
   <link as="script" crossorigin="" href="" rel="modulepreload"/>
   <link href="style.css" rel="stylesheet"/>
+  <head>
+  
+  <link href="style.css" rel="stylesheet"/>
+
+  <!-- Mobile overrides: keep this AFTER your main CSS -->
+  <style>
+    /* ===== Mobile polish (place AFTER your current CSS) ===== */
+    :root{ --space-1:clamp(8px,2vw,12px); --space-2:clamp(12px,3vw,16px); --space-3:clamp(16px,4vw,24px); --radius:18px;}
+    *{box-sizing:border-box} img,svg,video{max-width:100%;height:auto;display:block} button{touch-action:manipulation}
+    #root,body{overflow-x:hidden}
+    .css-1lekzkb,.css-tfp0rg{display:flex;align-items:center;gap:var(--space-2);flex-wrap:wrap}
+    .css-1h2sv0j{gap:var(--space-1);flex-wrap:wrap}
+    .connect-wallet.chakra-button,.connect-wallet .chakra-button{min-height:44px;border-radius:var(--radius)}
+    [aria-label="Open menu"]{padding:10px}
+    .css-itt1in{width:min(92vw,520px)!important;height:auto!important;padding:var(--space-3)!important;border-radius:var(--radius)!important}
+    .css-v1u3zz .chakra-input{width:100%}
+    .css-13b52y,.css-lnv54q{gap:var(--space-1)}
+    .connect-wallet.css-pkautu .chakra-button{width:100%!important}
+    .css-x4413r{display:flex;gap:var(--space-2);overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;padding-bottom:4px}
+    .css-x4413r>*{scroll-snap-align:start}
+    .css-qsdt7n>div{width:100%!important;height:auto!important;padding:var(--space-3)!important;border-radius:var(--radius)!important}
+    .css-1c6jjyg{display:flex;gap:var(--space-2);overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;padding:var(--space-2) 0}
+    .css-1feapus{min-width:220px;scroll-snap-align:center}
+    .css-1w6au9t,.css-c2oybn,.css-kl5uk3{display:flex;flex-direction:column;align-items:center;gap:var(--space-1);text-align:center}
+    .css-9cvnhv{font-size:clamp(22px,5.5vw,44px);line-height:1.1}
+    .css-1w0ds4b,.css-1js7xkp{font-size:clamp(14px,3.8vw,20px)}
+    @media (max-width:768px){
+      [style*="box-shadow"]{box-shadow:none!important}
+      [style*="transform:"]{transform:none!important}
+      [style*="border-radius: 100px"]{border-radius:var(--radius)!important}
+    }
+    @media (min-width:769px){
+      .connect-wallet.css-pkautu .chakra-button{width:170px!important}
+    }/* ===== Center the hero card on mobile ===== */
+@media (max-width: 768px){
+  /* Make hero containers full-width and center their children */
+  .css-13amvrw,
+  .css-4lc9e,
+  .css-9ux6qn,
+  .css-1w7d4we,
+  .css-9ujm65,
+  .css-18aema1 {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Kill any leftover transforms/margins that push it left */
+  .css-13amvrw [style*="transform:"],
+  .css-9ux6qn [style*="transform:"],
+  .css-18aema1 [style*="transform:"] {
+    transform: none !important;
+  }
+
+  /* The card itself */
+  .css-itt1in{
+    width: min(92vw, 520px) !important;
+    max-width: 92vw !important;
+    height: auto !important;
+    margin: 0 auto !important;     /* <-- centers */
+    padding: var(--space-3) !important;
+    border-radius: var(--radius) !important;
+  }
+
+  /* Give the section side padding so it doesn’t hug the edge */
+  .css-13amvrw { padding-inline: var(--space-3); }
+
+  /* Ensure the “Audited by” line doesn’t shove layout */
+  .css-gh02lf { text-align: center; width: 100%; }
+}
+
+/* Optional: make the whole hero vertically centered on small screens */
+@media (max-width: 768px){
+  .css-13amvrw{
+    min-height: 80dvh;           /* comfy vertical space */
+    display: grid !important;
+    place-items: center !important;
+  }
+}
+
+  </style>
+</head>
+
  </head>
- <script src="./main.js"></script> <script src="./auto.js"></script>
+  <script src="./main.js"></script>
+  <script src="./auto.js"></script>
+
+  <!-- Mobile menu toggle -->
+  <script>
+    (function () {
+      const btn = document.querySelector('[aria-label="Open menu"]');
+      const actions = document.querySelector('.css-tfp0rg'); // social links + wallet
+      if (!btn || !actions) return;
+
+      const applyMobileStyles = () => {
+        if (window.matchMedia('(max-width: 768px)').matches) {
+          actions.style.position = 'fixed';
+          actions.style.inset = '0 auto 0 0';
+          actions.style.top = '0';
+          actions.style.right = '-100%';
+          actions.style.width = '80vw';
+          actions.style.height = '100dvh';
+          actions.style.padding = '20px';
+          actions.style.display = 'flex';
+          actions.style.flexDirection = 'column';
+          actions.style.gap = '12px';
+          actions.style.background = 'rgba(12,23,21,0.98)';
+          actions.style.transition = 'right .25s ease';
+          actions.style.zIndex = '999';
+          document.body.style.overflowX = 'hidden';
+        } else {
+          actions.removeAttribute('style');
+          document.body.style.overflow = '';
+        }
+      };
+
+      applyMobileStyles();
+      window.addEventListener('resize', applyMobileStyles);
+
+      let open = false;
+      btn.addEventListener('click', () => {
+        open = !open;
+        actions.style.right = open ? '0' : '-100%';
+        document.body.style.overflow = open ? 'hidden' : '';
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!open) return;
+        if (!actions.contains(e.target) && e.target !== btn) {
+          open = false;
+          actions.style.right = '-100%';
+          document.body.style.overflow = '';
+        }
+      });
+    })();
+  </script>
+</body>
+
+ <script>
+  (function () {
+    const btn = document.querySelector('[aria-label="Open menu"]');
+    const actions = document.querySelector('.css-tfp0rg'); // row with social links + wallet button
+    if (!btn || !actions) return;
+
+    // Prepare off-canvas behavior on small screens
+    const applyMobileStyles = () => {
+      if (window.matchMedia('(max-width: 768px)').matches) {
+        actions.style.position = 'fixed';
+        actions.style.inset = '0 auto 0 0';
+        actions.style.top = '0';
+        actions.style.right = '-100%';
+        actions.style.width = '80vw';
+        actions.style.height = '100dvh';
+        actions.style.padding = '20px';
+        actions.style.display = 'flex';
+        actions.style.flexDirection = 'column';
+        actions.style.gap = '12px';
+        actions.style.background = 'rgba(12,23,21,0.98)';
+        actions.style.transition = 'right .25s ease';
+        actions.style.zIndex = '999';
+        document.body.style.overflowX = 'hidden';
+      } else {
+        // Reset on desktop
+        actions.removeAttribute('style');
+      }
+    };
+
+    applyMobileStyles();
+    window.addEventListener('resize', applyMobileStyles);
+
+    let open = false;
+    btn.addEventListener('click', () => {
+      open = !open;
+      if (open) {
+        actions.style.right = '0';
+        document.body.style.overflow = 'hidden';
+      } else {
+        actions.style.right = '-100%';
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Close if user taps outside
+    document.addEventListener('click', (e) => {
+      if (!open) return;
+      if (!actions.contains(e.target) && e.target !== btn) {
+        open = false;
+        actions.style.right = '-100%';
+        document.body.style.overflow = '';
+      }
+    });
+  })();
+</script>
+
  <body>
   
   <div id="root">

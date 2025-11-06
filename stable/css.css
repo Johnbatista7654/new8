@@ -1,0 +1,112 @@
+/* ===== Mobile polish (place AFTER your current CSS) ===== */
+
+/* Fluid type + spacing */
+:root{
+  --space-1: clamp(8px, 2vw, 12px);
+  --space-2: clamp(12px, 3vw, 16px);
+  --space-3: clamp(16px, 4vw, 24px);
+  --radius: 18px;
+}
+
+/* Basics */
+* { box-sizing: border-box; }
+img, svg, video { max-width: 100%; height: auto; display: block; }
+button { touch-action: manipulation; }
+
+/* Contain content nicely on all viewports */
+#root, body { overflow-x: hidden; }
+
+/* Header: stack on small screens, keep wallet button tappable */
+.css-1lekzkb,
+.css-tfp0rg {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+/* Make the logo row wrap gracefully */
+.css-1h2sv0j { gap: var(--space-1); flex-wrap: wrap; }
+
+/* Make the header actions usable on mobile */
+.connect-wallet.chakra-button,
+.connect-wallet .chakra-button {
+  min-height: 44px;
+  border-radius: var(--radius);
+}
+
+/* Burger: enlarge tap target */
+[aria-label="Open menu"] { padding: 10px; }
+
+/* Hero: remove fixed pixel sizing; make the big card fluid */
+.css-itt1in {
+  width: min(92vw, 520px) !important;
+  height: auto !important;
+  padding: var(--space-3) !important;
+  border-radius: var(--radius) !important;
+}
+
+/* Inputs/buttons full-width on mobile for easy entry */
+.css-v1u3zz .chakra-input { width: 100%; }
+.css-13b52y, .css-lnv54q { gap: var(--space-1); }
+
+/* Swap button spans width on phones */
+.connect-wallet.css-pkautu .chakra-button {
+  width: 100% !important;
+}
+
+/* Logos row: turn into a scrollable strip on mobile */
+.css-x4413r {
+  display: flex; gap: var(--space-2);
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory; padding-bottom: 4px;
+}
+.css-x4413r > * { scroll-snap-align: start; }
+
+/* “Early access” wide card: kill fixed sizes on mobile */
+.css-qsdt7n > div {
+  width: 100% !important;
+  height: auto !important;
+  padding: var(--space-3) !important;
+  border-radius: var(--radius) !important;
+}
+
+/* Timeline: turn into horizontal scroll on small screens */
+.css-1c6jjyg {
+  display: flex; gap: var(--space-2);
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity; padding: var(--space-2) 0;
+}
+.css-1feapus { min-width: 220px; scroll-snap-align: center; }
+
+/* Footer: center + stack */
+.css-1w6au9t,
+.css-c2oybn,
+.css-kl5uk3 {
+  display: flex; flex-direction: column; align-items: center; gap: var(--space-1);
+  text-align: center;
+}
+
+/* Typography: use clamp for the prominent headings */
+.css-9cvnhv { 
+  font-size: clamp(22px, 5.5vw, 44px);
+  line-height: 1.1;
+}
+.css-1w0ds4b,
+.css-1js7xkp { 
+  font-size: clamp(14px, 3.8vw, 20px);
+}
+
+/* Reduce heavy shadows on mobile to avoid muddy look */
+@media (max-width: 768px){
+  [style*="box-shadow"] { box-shadow: none !important; }
+  /* Disable decorative transforms/parallax on mobile */
+  [style*="transform:"] { transform: none !important; }
+  /* Relax massive radii so cards look cleaner on small screens */
+  [style*="border-radius: 100px"] { border-radius: var(--radius) !important; }
+}
+
+/* Medium+ screens keep your intended layout */
+@media (min-width: 769px){
+  .connect-wallet.css-pkautu .chakra-button { width: 170px !important; }
+}
