@@ -1,0 +1,779 @@
+/* --- Extracted <style> block #1 --- */
+.glass-card{border-radius:100px;background:var(--green, #162b26);box-shadow:12px 12px 20px #00000040 inset}body{pointer-events:all!important}@font-face{font-family:Roobert;src:/*savepage-url=/assets/Roobert-Regular-CznfJWXD.woff2*/url(fonts/font_7dac11a41a87df42ea7b27f95c063afed07c7a1c.woff2) format("woff2");font-weight:400;font-style:normal;/*savepage-font-display=swap*/}@font-face{font-family:Roobert;src:/*savepage-url=/assets/Roobert-Bold-B25Z_PdD.woff2*/url(fonts/font_2cea3eee058bddc2bf61fc89aa59bce92efddfc4.woff2) format("woff2");font-weight:700;font-style:normal;/*savepage-font-display=swap*/}*{margin:0;padding:0;box-sizing:border-box}:root{font-family:Roobert,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;line-height:1.5;font-weight:400;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{margin:0;min-width:320px;min-height:100vh;background:#f5f5f5;color:#000}@media (min-width: 768px){body{overflow:hidden}}::-webkit-scrollbar{display:none}html{scrollbar-width:none}#root{min-height:100vh}a{text-decoration:none;color:inherit}input:focus{outline:none}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield;-webkit-appearance:textfield;appearance:textfield}
+
+/* --- Extracted <style> block #2 --- */
+@layer reset, base, tokens, recipes;
+
+/* --- Extracted <style> block #3 --- */
+@layer reset {
+  html { line-height: 1.5; --font-fallback: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; text-size-adjust: 100%; -webkit-font-smoothing: antialiased; text-rendering: optimizelegibility; touch-action: manipulation; tab-size: 4; font-family: var(--global-font-body, var(--font-fallback)); }
+  * { margin: 0px; padding: 0px; font: inherit; overflow-wrap: break-word; -webkit-tap-highlight-color: transparent; }
+  *, ::before, ::after, ::backdrop { box-sizing: border-box; border-width: 0px; border-style: solid; border-color: var(--global-color-border, currentColor); }
+  hr { height: 0px; color: inherit; border-top-width: 1px; }
+  body { min-height: 100dvh; position: relative; }
+  img { border-style: none; }
+  img, svg, video, canvas, audio, iframe, embed, object { display: block; vertical-align: middle; }
+  iframe { border: none; }
+  img, video { max-width: 100%; height: auto; }
+  p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+  ol, ul { list-style: none; }
+  code, kbd, pre, samp { font-size: 1em; }
+  button, [type="button"], [type="reset"], [type="submit"] { appearance: button; background-color: transparent; background-image: none; }
+  button, input, optgroup, select, textarea { color: inherit; }
+  button, select { text-transform: none; }
+  table { text-indent: 0px; border-color: inherit; border-collapse: collapse; }
+  ::-webkit-input-placeholder { opacity: unset; color: rgb(156, 163, 175); user-select: none; }
+  ::placeholder { opacity: unset; color: rgb(156, 163, 175); user-select: none; }
+  textarea { resize: vertical; }
+  summary { display: list-item; }
+  small { font-size: 80%; }
+  sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+  sub { bottom: -0.25em; }
+  sup { top: -0.5em; }
+  dialog { padding: 0px; }
+  a { color: inherit; text-decoration: inherit; }
+  abbr:where([title]) { text-decoration: underline dotted; }
+  b, strong { font-weight: bolder; }
+  code, kbd, samp, pre { font-size: 1em; --font-mono-fallback: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New'; font-family: var(--global-font-mono, var(--font-mono-fallback)); }
+  input[type="text"], input[type="email"], input[type="search"], input[type="password"] { appearance: none; }
+  input[type="search"] { appearance: textfield; outline-offset: -2px; }
+  ::-webkit-search-decoration, ::-webkit-search-cancel-button { appearance: none; }
+  ::-webkit-file-upload-button { appearance: button; font: inherit; }
+  input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
+  input[type="number"] { }
+  [hidden]:where(:not([hidden="until-found"])) { display: none !important; }
+}
+@layer base {
+  @-webkit-keyframes spin { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+  @keyframes spin { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+  @-webkit-keyframes pulse { 
+  50% { opacity: 0.5; }
+}
+  @keyframes pulse { 
+  50% { opacity: 0.5; }
+}
+  @-webkit-keyframes ping { 
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+  @keyframes ping { 
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+  @-webkit-keyframes bounce { 
+  0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
+  50% { transform: none; animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+}
+  @keyframes bounce { 
+  0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
+  50% { transform: none; animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+}
+  @-webkit-keyframes bg-position { 
+  0% { background-position: var(--animate-from, 1rem) 0; }
+  100% { background-position: var(--animate-to, 0) 0; }
+}
+  @keyframes bg-position { 
+  0% { background-position: var(--animate-from, 1rem) 0; }
+  100% { background-position: var(--animate-to, 0) 0; }
+}
+  @-webkit-keyframes position { 
+  0% { inset-inline-start: var(--animate-from-x); inset-block-start: var(--animate-from-y); }
+  100% { inset-inline-start: var(--animate-to-x); inset-block-start: var(--animate-to-y); }
+}
+  @keyframes position { 
+  0% { inset-inline-start: var(--animate-from-x); inset-block-start: var(--animate-from-y); }
+  100% { inset-inline-start: var(--animate-to-x); inset-block-start: var(--animate-to-y); }
+}
+  @-webkit-keyframes circular-progress { 
+  0% { stroke-dasharray: 1, 400; stroke-dashoffset: 0; }
+  50% { stroke-dasharray: 400, 400; stroke-dashoffset: -100%; }
+  100% { stroke-dasharray: 400, 400; stroke-dashoffset: -260%; }
+}
+  @keyframes circular-progress { 
+  0% { stroke-dasharray: 1, 400; stroke-dashoffset: 0; }
+  50% { stroke-dasharray: 400, 400; stroke-dashoffset: -100%; }
+  100% { stroke-dasharray: 400, 400; stroke-dashoffset: -260%; }
+}
+  @-webkit-keyframes expand-height { 
+  0% { height: 0px; }
+  100% { height: var(--height); }
+}
+  @keyframes expand-height { 
+  0% { height: 0px; }
+  100% { height: var(--height); }
+}
+  @-webkit-keyframes collapse-height { 
+  0% { height: var(--height); }
+  100% { height: 0px; }
+}
+  @keyframes collapse-height { 
+  0% { height: var(--height); }
+  100% { height: 0px; }
+}
+  @-webkit-keyframes expand-width { 
+  0% { width: 0px; }
+  100% { width: var(--width); }
+}
+  @keyframes expand-width { 
+  0% { width: 0px; }
+  100% { width: var(--width); }
+}
+  @-webkit-keyframes collapse-width { 
+  0% { height: var(--width); }
+  100% { height: 0px; }
+}
+  @keyframes collapse-width { 
+  0% { height: var(--width); }
+  100% { height: 0px; }
+}
+  @-webkit-keyframes fade-in { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  @keyframes fade-in { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  @-webkit-keyframes fade-out { 
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+  @keyframes fade-out { 
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+  @-webkit-keyframes slide-from-left-full { 
+  0% { translate: -100%; }
+  100% { translate: 0px; }
+}
+  @keyframes slide-from-left-full { 
+  0% { translate: -100%; }
+  100% { translate: 0px; }
+}
+  @-webkit-keyframes slide-from-right-full { 
+  0% { translate: 100%; }
+  100% { translate: 0px; }
+}
+  @keyframes slide-from-right-full { 
+  0% { translate: 100%; }
+  100% { translate: 0px; }
+}
+  @-webkit-keyframes slide-from-top-full { 
+  0% { translate: 0px -100%; }
+  100% { translate: 0px; }
+}
+  @keyframes slide-from-top-full { 
+  0% { translate: 0px -100%; }
+  100% { translate: 0px; }
+}
+  @-webkit-keyframes slide-from-bottom-full { 
+  0% { translate: 0px 100%; }
+  100% { translate: 0px; }
+}
+  @keyframes slide-from-bottom-full { 
+  0% { translate: 0px 100%; }
+  100% { translate: 0px; }
+}
+  @-webkit-keyframes slide-to-left-full { 
+  0% { translate: 0px; }
+  100% { translate: -100%; }
+}
+  @keyframes slide-to-left-full { 
+  0% { translate: 0px; }
+  100% { translate: -100%; }
+}
+  @-webkit-keyframes slide-to-right-full { 
+  0% { translate: 0px; }
+  100% { translate: 100%; }
+}
+  @keyframes slide-to-right-full { 
+  0% { translate: 0px; }
+  100% { translate: 100%; }
+}
+  @-webkit-keyframes slide-to-top-full { 
+  0% { translate: 0px; }
+  100% { translate: 0px -100%; }
+}
+  @keyframes slide-to-top-full { 
+  0% { translate: 0px; }
+  100% { translate: 0px -100%; }
+}
+  @-webkit-keyframes slide-to-bottom-full { 
+  0% { translate: 0px; }
+  100% { translate: 0px 100%; }
+}
+  @keyframes slide-to-bottom-full { 
+  0% { translate: 0px; }
+  100% { translate: 0px 100%; }
+}
+  @-webkit-keyframes slide-from-top { 
+  0% { translate: 0px -0.5rem; }
+  100% { translate: 0px; }
+}
+  @keyframes slide-from-top { 
+  0% { translate: 0px -0.5rem; }
+  100% { translate: 0px; }
+}
+  @-webkit-keyframes slide-from-bottom { 
+  0% { translate: 0px 0.5rem; }
+  100% { translate: 0px; }
+}
+  @keyframes slide-from-bottom { 
+  0% { translate: 0px 0.5rem; }
+  100% { translate: 0px; }
+}
+  @-webkit-keyframes slide-from-left { 
+  0% { translate: -0.5rem; }
+  100% { translate: 0px; }
+}
+  @keyframes slide-from-left { 
+  0% { translate: -0.5rem; }
+  100% { translate: 0px; }
+}
+  @-webkit-keyframes slide-from-right { 
+  0% { translate: 0.5rem; }
+  100% { translate: 0px; }
+}
+  @keyframes slide-from-right { 
+  0% { translate: 0.5rem; }
+  100% { translate: 0px; }
+}
+  @-webkit-keyframes slide-to-top { 
+  0% { translate: 0px; }
+  100% { translate: 0px -0.5rem; }
+}
+  @keyframes slide-to-top { 
+  0% { translate: 0px; }
+  100% { translate: 0px -0.5rem; }
+}
+  @-webkit-keyframes slide-to-bottom { 
+  0% { translate: 0px; }
+  100% { translate: 0px 0.5rem; }
+}
+  @keyframes slide-to-bottom { 
+  0% { translate: 0px; }
+  100% { translate: 0px 0.5rem; }
+}
+  @-webkit-keyframes slide-to-left { 
+  0% { translate: 0px; }
+  100% { translate: -0.5rem; }
+}
+  @keyframes slide-to-left { 
+  0% { translate: 0px; }
+  100% { translate: -0.5rem; }
+}
+  @-webkit-keyframes slide-to-right { 
+  0% { translate: 0px; }
+  100% { translate: 0.5rem; }
+}
+  @keyframes slide-to-right { 
+  0% { translate: 0px; }
+  100% { translate: 0.5rem; }
+}
+  @-webkit-keyframes scale-in { 
+  0% { scale: 0.95; }
+  100% { scale: 1; }
+}
+  @keyframes scale-in { 
+  0% { scale: 0.95; }
+  100% { scale: 1; }
+}
+  @-webkit-keyframes scale-out { 
+  0% { scale: 1; }
+  100% { scale: 0.95; }
+}
+  @keyframes scale-out { 
+  0% { scale: 1; }
+  100% { scale: 0.95; }
+}
+  * { font-feature-settings: "cv11"; --ring-offset-width: 0px; --ring-offset-color: #fff; --ring-color: rgba(66, 153, 225, 0.6); --ring-offset-shadow: 0 0 #0000; --ring-shadow: 0 0 #0000; --global-font-mono: var(--chakra-fonts-mono); --global-font-body: var(--chakra-fonts-body); --global-color-border: var(--chakra-colors-border); --ring-inset: var(--chakra-empty,/**/ /*!*/) !important; --brightness: var(--chakra-empty,/**/ /*!*/) !important; --contrast: var(--chakra-empty,/**/ /*!*/) !important; --grayscale: var(--chakra-empty,/**/ /*!*/) !important; --hue-rotate: var(--chakra-empty,/**/ /*!*/) !important; --invert: var(--chakra-empty,/**/ /*!*/) !important; --saturate: var(--chakra-empty,/**/ /*!*/) !important; --sepia: var(--chakra-empty,/**/ /*!*/) !important; --drop-shadow: var(--chakra-empty,/**/ /*!*/) !important; --backdrop-blur: var(--chakra-empty,/**/ /*!*/) !important; --backdrop-brightness: var(--chakra-empty,/**/ /*!*/) !important; --backdrop-contrast: var(--chakra-empty,/**/ /*!*/) !important; --backdrop-grayscale: var(--chakra-empty,/**/ /*!*/) !important; --backdrop-hue-rotate: var(--chakra-empty,/**/ /*!*/) !important; --backdrop-invert: var(--chakra-empty,/**/ /*!*/) !important; --backdrop-opacity: var(--chakra-empty,/**/ /*!*/) !important; --backdrop-saturate: var(--chakra-empty,/**/ /*!*/) !important; --backdrop-sepia: var(--chakra-empty,/**/ /*!*/) !important; }
+  html { color: var(--chakra-colors-fg); background: var(--chakra-colors-bg); --bg-currentcolor: var(--chakra-colors-bg); line-height: 1.5; --chakra-colors-color-palette: var(--chakra-colors-gray); --chakra-colors-color-palette-contrast: var(--chakra-colors-gray-contrast); --chakra-colors-color-palette-fg: var(--chakra-colors-gray-fg); --chakra-colors-color-palette-subtle: var(--chakra-colors-gray-subtle); --chakra-colors-color-palette-muted: var(--chakra-colors-gray-muted); --chakra-colors-color-palette-emphasized: var(--chakra-colors-gray-emphasized); --chakra-colors-color-palette-solid: var(--chakra-colors-gray-solid); --chakra-colors-color-palette-focus-ring: var(--chakra-colors-gray-focus-ring); }
+  ::-webkit-input-placeholder { --mix-color: color-mix(in srgb, var(--chakra-colors-fg-muted) 80%, transparent); color: var(--mix-color, var(--chakra-colors-fg-muted)); }
+  ::placeholder, [data-placeholder] { --mix-color: color-mix(in srgb, var(--chakra-colors-fg-muted) 80%, transparent); color: var(--mix-color, var(--chakra-colors-fg-muted)); }
+  ::selection { --mix-background: color-mix(in srgb, var(--chakra-colors-color-palette-emphasized) 80%, transparent); background: var(--mix-background, var(--chakra-colors-color-palette-emphasized)); --bg-currentcolor: var(--mix-background, var(--chakra-colors-color-palette-emphasized)); }
+  html, body { background: rgb(245, 245, 245); --bg-currentcolor: #f5f5f5; color: var(--chakra-colors-black); font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+}
+@layer tokens {
+  :where(html, .chakra-theme) { --chakra-aspect-ratios-square: 1/1; --chakra-aspect-ratios-landscape: 4/3; --chakra-aspect-ratios-portrait: 3/4; --chakra-aspect-ratios-wide: 16/9; --chakra-aspect-ratios-ultrawide: 18/5; --chakra-aspect-ratios-golden: 1.618/1; --chakra-animations-spin: spin 1s linear infinite; --chakra-animations-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; --chakra-animations-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; --chakra-animations-bounce: bounce 1s infinite; --chakra-blurs-sm: 4px; --chakra-blurs-md: 8px; --chakra-blurs-lg: 12px; --chakra-blurs-xl: 16px; --chakra-blurs-2xl: 24px; --chakra-blurs-3xl: 40px; --chakra-blurs-4xl: 64px; --chakra-borders-xs: 0.5px solid; --chakra-borders-sm: 1px solid; --chakra-borders-md: 2px solid; --chakra-borders-lg: 4px solid; --chakra-borders-xl: 8px solid; --chakra-colors-transparent: transparent; --chakra-colors-current: currentColor; --chakra-colors-black: #000000; --chakra-colors-white: #FFFDF6; --chakra-colors-white-alpha-50: rgba(255, 255, 255, 0.04); --chakra-colors-white-alpha-100: rgba(255, 255, 255, 0.06); --chakra-colors-white-alpha-200: rgba(255, 255, 255, 0.08); --chakra-colors-white-alpha-300: rgba(255, 255, 255, 0.16); --chakra-colors-white-alpha-400: rgba(255, 255, 255, 0.24); --chakra-colors-white-alpha-500: rgba(255, 255, 255, 0.36); --chakra-colors-white-alpha-600: rgba(255, 255, 255, 0.48); --chakra-colors-white-alpha-700: rgba(255, 255, 255, 0.64); --chakra-colors-white-alpha-800: rgba(255, 255, 255, 0.80); --chakra-colors-white-alpha-900: rgba(255, 255, 255, 0.92); --chakra-colors-white-alpha-950: rgba(255, 255, 255, 0.95); --chakra-colors-black-alpha-50: rgba(0, 0, 0, 0.04); --chakra-colors-black-alpha-100: rgba(0, 0, 0, 0.06); --chakra-colors-black-alpha-200: rgba(0, 0, 0, 0.08); --chakra-colors-black-alpha-300: rgba(0, 0, 0, 0.16); --chakra-colors-black-alpha-400: rgba(0, 0, 0, 0.24); --chakra-colors-black-alpha-500: rgba(0, 0, 0, 0.36); --chakra-colors-black-alpha-600: rgba(0, 0, 0, 0.48); --chakra-colors-black-alpha-700: rgba(0, 0, 0, 0.64); --chakra-colors-black-alpha-800: rgba(0, 0, 0, 0.80); --chakra-colors-black-alpha-900: rgba(0, 0, 0, 0.92); --chakra-colors-black-alpha-950: rgba(0, 0, 0, 0.95); --chakra-colors-gray: #C0C4B9; --chakra-colors-red: #EA4F3A; --chakra-colors-orange: #DF4D0E; --chakra-colors-yellow: #daac2a; --chakra-colors-green: #162B26; --chakra-colors-teal-50: #f0fdfa; --chakra-colors-teal-100: #ccfbf1; --chakra-colors-teal-200: #99f6e4; --chakra-colors-teal-300: #5eead4; --chakra-colors-teal-400: #2dd4bf; --chakra-colors-teal-500: #14b8a6; --chakra-colors-teal-600: #0d9488; --chakra-colors-teal-700: #0c5d56; --chakra-colors-teal-800: #114240; --chakra-colors-teal-900: #032726; --chakra-colors-teal-950: #021716; --chakra-colors-blue: #4996e9; --chakra-colors-cyan-50: #ecfeff; --chakra-colors-cyan-100: #cffafe; --chakra-colors-cyan-200: #a5f3fc; --chakra-colors-cyan-300: #67e8f9; --chakra-colors-cyan-400: #22d3ee; --chakra-colors-cyan-500: #06b6d4; --chakra-colors-cyan-600: #0891b2; --chakra-colors-cyan-700: #0c5c72; --chakra-colors-cyan-800: #134152; --chakra-colors-cyan-900: #072a38; --chakra-colors-cyan-950: #051b24; --chakra-colors-purple-50: #faf5ff; --chakra-colors-purple-100: #f3e8ff; --chakra-colors-purple-200: #e9d5ff; --chakra-colors-purple-300: #d8b4fe; --chakra-colors-purple-400: #c084fc; --chakra-colors-purple-500: #a855f7; --chakra-colors-purple-600: #9333ea; --chakra-colors-purple-700: #641ba3; --chakra-colors-purple-800: #4a1772; --chakra-colors-purple-900: #2f0553; --chakra-colors-purple-950: #1a032e; --chakra-colors-pink-50: #fdf2f8; --chakra-colors-pink-100: #fce7f3; --chakra-colors-pink-200: #fbcfe8; --chakra-colors-pink-300: #f9a8d4; --chakra-colors-pink-400: #f472b6; --chakra-colors-pink-500: #ec4899; --chakra-colors-pink-600: #db2777; --chakra-colors-pink-700: #a41752; --chakra-colors-pink-800: #6d0e34; --chakra-colors-pink-900: #45061f; --chakra-colors-pink-950: #2c0514; --chakra-colors-black40: #00000066; --chakra-colors-white40: #FFFDF666; --chakra-colors-green_light: #204039; --chakra-colors-green_lighter: #4A937A; --chakra-colors-green_dark: #0C1715; --chakra-colors-green_accent: #6BD3AF; --chakra-colors-green_stable: #007B50; --chakra-colors-green40: #162B2666; --chakra-colors-red_light: #F9C9BB; --chakra-colors-red40: #e9414266; --chakra-colors-orange40: #DF4D0E66; --chakra-colors-blue40: #4996e966; --chakra-colors-yellow40: #daac2a66; --chakra-colors-garnet: #2E4045; --chakra-durations-fastest: 50ms; --chakra-durations-faster: 100ms; --chakra-durations-fast: 150ms; --chakra-durations-moderate: 200ms; --chakra-durations-slow: 300ms; --chakra-durations-slower: 400ms; --chakra-durations-slowest: 500ms; --chakra-easings-ease-in: cubic-bezier(0.42, 0, 1, 1); --chakra-easings-ease-out: cubic-bezier(0, 0, 0.58, 1); --chakra-easings-ease-in-out: cubic-bezier(0.42, 0, 0.58, 1); --chakra-easings-ease-in-smooth: cubic-bezier(0.32, 0.72, 0, 1); --chakra-fonts-heading: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; --chakra-fonts-body: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; --chakra-fonts-mono: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; --chakra-font-sizes-2xs: 0.625rem; --chakra-font-sizes-xs: 0.75rem; --chakra-font-sizes-sm: 0.875rem; --chakra-font-sizes-md: 1rem; --chakra-font-sizes-lg: 1.125rem; --chakra-font-sizes-xl: 1.25rem; --chakra-font-sizes-2xl: 1.5rem; --chakra-font-sizes-3xl: 1.875rem; --chakra-font-sizes-4xl: 2.25rem; --chakra-font-sizes-5xl: 3rem; --chakra-font-sizes-6xl: 3.75rem; --chakra-font-sizes-7xl: 4.5rem; --chakra-font-sizes-8xl: 6rem; --chakra-font-sizes-9xl: 8rem; --chakra-font-weights-thin: 100; --chakra-font-weights-extralight: 200; --chakra-font-weights-light: 300; --chakra-font-weights-normal: 400; --chakra-font-weights-medium: 500; --chakra-font-weights-semibold: 600; --chakra-font-weights-bold: 700; --chakra-font-weights-extrabold: 800; --chakra-font-weights-black: 900; --chakra-letter-spacings-tighter: -0.05em; --chakra-letter-spacings-tight: -0.025em; --chakra-letter-spacings-wide: 0.025em; --chakra-letter-spacings-wider: 0.05em; --chakra-letter-spacings-widest: 0.1em; --chakra-line-heights-shorter: 1.25; --chakra-line-heights-short: 1.375; --chakra-line-heights-moderate: 1.5; --chakra-line-heights-tall: 1.625; --chakra-line-heights-taller: 2; --chakra-radii-none: 0; --chakra-radii-2xs: 0.0625rem; --chakra-radii-xs: 0.125rem; --chakra-radii-sm: 0.25rem; --chakra-radii-md: 0.375rem; --chakra-radii-lg: 0.5rem; --chakra-radii-xl: 0.75rem; --chakra-radii-2xl: 1rem; --chakra-radii-3xl: 1.5rem; --chakra-radii-4xl: 2rem; --chakra-radii-full: 9999px; --chakra-spacing-1: 0.25rem; --chakra-spacing-2: 0.5rem; --chakra-spacing-3: 0.75rem; --chakra-spacing-4: 1rem; --chakra-spacing-5: 1.25rem; --chakra-spacing-6: 1.5rem; --chakra-spacing-7: 1.75rem; --chakra-spacing-8: 2rem; --chakra-spacing-9: 2.25rem; --chakra-spacing-10: 2.5rem; --chakra-spacing-11: 2.75rem; --chakra-spacing-12: 3rem; --chakra-spacing-14: 3.5rem; --chakra-spacing-16: 4rem; --chakra-spacing-20: 5rem; --chakra-spacing-24: 6rem; --chakra-spacing-28: 7rem; --chakra-spacing-32: 8rem; --chakra-spacing-36: 9rem; --chakra-spacing-40: 10rem; --chakra-spacing-44: 11rem; --chakra-spacing-48: 12rem; --chakra-spacing-52: 13rem; --chakra-spacing-56: 14rem; --chakra-spacing-60: 15rem; --chakra-spacing-64: 16rem; --chakra-spacing-72: 18rem; --chakra-spacing-80: 20rem; --chakra-spacing-96: 24rem; --chakra-spacing-0\.5: 0.125rem; --chakra-spacing-1\.5: 0.375rem; --chakra-spacing-2\.5: 0.625rem; --chakra-spacing-3\.5: 0.875rem; --chakra-spacing-4\.5: 1.125rem; --chakra-sizes-1: 0.25rem; --chakra-sizes-2: 0.5rem; --chakra-sizes-3: 0.75rem; --chakra-sizes-4: 1rem; --chakra-sizes-5: 1.25rem; --chakra-sizes-6: 1.5rem; --chakra-sizes-7: 1.75rem; --chakra-sizes-8: 2rem; --chakra-sizes-9: 2.25rem; --chakra-sizes-10: 2.5rem; --chakra-sizes-11: 2.75rem; --chakra-sizes-12: 3rem; --chakra-sizes-14: 3.5rem; --chakra-sizes-16: 4rem; --chakra-sizes-20: 5rem; --chakra-sizes-24: 6rem; --chakra-sizes-28: 7rem; --chakra-sizes-32: 8rem; --chakra-sizes-36: 9rem; --chakra-sizes-40: 10rem; --chakra-sizes-44: 11rem; --chakra-sizes-48: 12rem; --chakra-sizes-52: 13rem; --chakra-sizes-56: 14rem; --chakra-sizes-60: 15rem; --chakra-sizes-64: 16rem; --chakra-sizes-72: 18rem; --chakra-sizes-80: 20rem; --chakra-sizes-96: 24rem; --chakra-sizes-3xs: 14rem; --chakra-sizes-2xs: 16rem; --chakra-sizes-xs: 20rem; --chakra-sizes-sm: 24rem; --chakra-sizes-md: 28rem; --chakra-sizes-lg: 32rem; --chakra-sizes-xl: 36rem; --chakra-sizes-2xl: 42rem; --chakra-sizes-3xl: 48rem; --chakra-sizes-4xl: 56rem; --chakra-sizes-5xl: 64rem; --chakra-sizes-6xl: 72rem; --chakra-sizes-7xl: 80rem; --chakra-sizes-8xl: 90rem; --chakra-sizes-0\.5: 0.125rem; --chakra-sizes-1\.5: 0.375rem; --chakra-sizes-2\.5: 0.625rem; --chakra-sizes-3\.5: 0.875rem; --chakra-sizes-4\.5: 1.125rem; --chakra-sizes-1\/2: 50%; --chakra-sizes-1\/3: 33.333333%; --chakra-sizes-2\/3: 66.666667%; --chakra-sizes-1\/4: 25%; --chakra-sizes-3\/4: 75%; --chakra-sizes-1\/5: 20%; --chakra-sizes-2\/5: 40%; --chakra-sizes-3\/5: 60%; --chakra-sizes-4\/5: 80%; --chakra-sizes-1\/6: 16.666667%; --chakra-sizes-2\/6: 33.333333%; --chakra-sizes-3\/6: 50%; --chakra-sizes-4\/6: 66.666667%; --chakra-sizes-5\/6: 83.333333%; --chakra-sizes-1\/12: 8.333333%; --chakra-sizes-2\/12: 16.666667%; --chakra-sizes-3\/12: 25%; --chakra-sizes-4\/12: 33.333333%; --chakra-sizes-5\/12: 41.666667%; --chakra-sizes-6\/12: 50%; --chakra-sizes-7\/12: 58.333333%; --chakra-sizes-8\/12: 66.666667%; --chakra-sizes-9\/12: 75%; --chakra-sizes-10\/12: 83.333333%; --chakra-sizes-11\/12: 91.666667%; --chakra-sizes-max: max-content; --chakra-sizes-min: min-content; --chakra-sizes-fit: fit-content; --chakra-sizes-prose: 60ch; --chakra-sizes-full: 100%; --chakra-sizes-dvh: 100dvh; --chakra-sizes-svh: 100svh; --chakra-sizes-lvh: 100lvh; --chakra-sizes-dvw: 100dvw; --chakra-sizes-svw: 100svw; --chakra-sizes-lvw: 100lvw; --chakra-sizes-vw: 100vw; --chakra-sizes-vh: 100vh; --chakra-sizes-breakpoint-sm: 850px; --chakra-sizes-breakpoint-md: 1000px; --chakra-sizes-breakpoint-lg: 1400px; --chakra-sizes-breakpoint-xl: 1280px; --chakra-sizes-breakpoint-2xl: 1536px; --chakra-z-index-hide: -1; --chakra-z-index-base: 0; --chakra-z-index-docked: 10; --chakra-z-index-dropdown: 1000; --chakra-z-index-sticky: 1100; --chakra-z-index-banner: 1200; --chakra-z-index-overlay: 1300; --chakra-z-index-modal: 1400; --chakra-z-index-popover: 1500; --chakra-z-index-skip-nav: 1600; --chakra-z-index-toast: 1700; --chakra-z-index-tooltip: 1800; --chakra-z-index-max: 2147483647; --chakra-cursor-button: pointer; --chakra-cursor-checkbox: default; --chakra-cursor-disabled: not-allowed; --chakra-cursor-menuitem: default; --chakra-cursor-option: default; --chakra-cursor-radio: default; --chakra-cursor-slider: default; --chakra-cursor-switch: pointer; --chakra-gradients-green-black-angular: conic-gradient(from 180deg at 50% 50%, #0E1B18 0deg, #24473B 360deg); --chakra-gradients-green-gradient: linear-gradient(135deg, #24473B 0%, #162B26 100%); --chakra-gradients-green-gradient-reverse: linear-gradient(135deg, #162B26 0%, #24473B 100%); --chakra-breakpoints-sm: 850px; --chakra-breakpoints-md: 1000px; --chakra-breakpoints-lg: 1400px; --chakra-breakpoints-xl: 1280px; --chakra-breakpoints-2xl: 1536px; --chakra-radii-l1: var(--chakra-radii-xs); --chakra-radii-l2: var(--chakra-radii-sm); --chakra-radii-l3: var(--chakra-radii-md); }
+  :root, .light { --chakra-colors-bg: var(--chakra-colors-white); --chakra-colors-bg-subtle: colors\.gray\.50; --chakra-colors-bg-muted: colors\.gray\.100; --chakra-colors-bg-emphasized: colors\.gray\.200; --chakra-colors-bg-inverted: var(--chakra-colors-black); --chakra-colors-bg-panel: var(--chakra-colors-white); --chakra-colors-bg-error: colors\.red\.50; --chakra-colors-bg-warning: colors\.orange\.50; --chakra-colors-bg-success: colors\.green\.50; --chakra-colors-bg-info: colors\.blue\.50; --chakra-colors-fg: var(--chakra-colors-black); --chakra-colors-fg-muted: colors\.gray\.600; --chakra-colors-fg-subtle: colors\.gray\.400; --chakra-colors-fg-inverted: colors\.gray\.50; --chakra-colors-fg-error: colors\.red\.500; --chakra-colors-fg-warning: colors\.orange\.600; --chakra-colors-fg-success: colors\.green\.600; --chakra-colors-fg-info: colors\.blue\.600; --chakra-colors-border: colors\.gray\.200; --chakra-colors-border-muted: colors\.gray\.100; --chakra-colors-border-subtle: colors\.gray\.50; --chakra-colors-border-emphasized: colors\.gray\.300; --chakra-colors-border-inverted: colors\.gray\.800; --chakra-colors-border-error: colors\.red\.500; --chakra-colors-border-warning: colors\.orange\.500; --chakra-colors-border-success: colors\.green\.500; --chakra-colors-border-info: colors\.blue\.500; --chakra-colors-gray-contrast: var(--chakra-colors-white); --chakra-colors-gray-fg: colors\.gray\.800; --chakra-colors-gray-subtle: colors\.gray\.100; --chakra-colors-gray-muted: colors\.gray\.200; --chakra-colors-gray-emphasized: colors\.gray\.300; --chakra-colors-gray-solid: colors\.gray\.900; --chakra-colors-gray-focus-ring: colors\.gray\.400; --chakra-colors-red-contrast: white; --chakra-colors-red-fg: colors\.red\.700; --chakra-colors-red-subtle: colors\.red\.100; --chakra-colors-red-muted: colors\.red\.200; --chakra-colors-red-emphasized: colors\.red\.300; --chakra-colors-red-solid: colors\.red\.600; --chakra-colors-red-focus-ring: colors\.red\.500; --chakra-colors-orange-contrast: white; --chakra-colors-orange-fg: colors\.orange\.700; --chakra-colors-orange-subtle: colors\.orange\.100; --chakra-colors-orange-muted: colors\.orange\.200; --chakra-colors-orange-emphasized: colors\.orange\.300; --chakra-colors-orange-solid: colors\.orange\.600; --chakra-colors-orange-focus-ring: colors\.orange\.500; --chakra-colors-green-contrast: white; --chakra-colors-green-fg: colors\.green\.700; --chakra-colors-green-subtle: colors\.green\.100; --chakra-colors-green-muted: colors\.green\.200; --chakra-colors-green-emphasized: colors\.green\.300; --chakra-colors-green-solid: colors\.green\.600; --chakra-colors-green-focus-ring: colors\.green\.500; --chakra-colors-blue-contrast: white; --chakra-colors-blue-fg: colors\.blue\.700; --chakra-colors-blue-subtle: colors\.blue\.100; --chakra-colors-blue-muted: colors\.blue\.200; --chakra-colors-blue-emphasized: colors\.blue\.300; --chakra-colors-blue-solid: colors\.blue\.600; --chakra-colors-blue-focus-ring: colors\.blue\.500; --chakra-colors-yellow-contrast: black; --chakra-colors-yellow-fg: colors\.yellow\.800; --chakra-colors-yellow-subtle: colors\.yellow\.100; --chakra-colors-yellow-muted: colors\.yellow\.200; --chakra-colors-yellow-emphasized: colors\.yellow\.300; --chakra-colors-yellow-solid: colors\.yellow\.300; --chakra-colors-yellow-focus-ring: colors\.yellow\.500; --chakra-colors-teal-contrast: white; --chakra-colors-teal-fg: var(--chakra-colors-teal-700); --chakra-colors-teal-subtle: var(--chakra-colors-teal-100); --chakra-colors-teal-muted: var(--chakra-colors-teal-200); --chakra-colors-teal-emphasized: var(--chakra-colors-teal-300); --chakra-colors-teal-solid: var(--chakra-colors-teal-600); --chakra-colors-teal-focus-ring: var(--chakra-colors-teal-500); --chakra-colors-purple-contrast: white; --chakra-colors-purple-fg: var(--chakra-colors-purple-700); --chakra-colors-purple-subtle: var(--chakra-colors-purple-100); --chakra-colors-purple-muted: var(--chakra-colors-purple-200); --chakra-colors-purple-emphasized: var(--chakra-colors-purple-300); --chakra-colors-purple-solid: var(--chakra-colors-purple-600); --chakra-colors-purple-focus-ring: var(--chakra-colors-purple-500); --chakra-colors-pink-contrast: white; --chakra-colors-pink-fg: var(--chakra-colors-pink-700); --chakra-colors-pink-subtle: var(--chakra-colors-pink-100); --chakra-colors-pink-muted: var(--chakra-colors-pink-200); --chakra-colors-pink-emphasized: var(--chakra-colors-pink-300); --chakra-colors-pink-solid: var(--chakra-colors-pink-600); --chakra-colors-pink-focus-ring: var(--chakra-colors-pink-500); --chakra-colors-cyan-contrast: white; --chakra-colors-cyan-fg: var(--chakra-colors-cyan-700); --chakra-colors-cyan-subtle: var(--chakra-colors-cyan-100); --chakra-colors-cyan-muted: var(--chakra-colors-cyan-200); --chakra-colors-cyan-emphasized: var(--chakra-colors-cyan-300); --chakra-colors-cyan-solid: var(--chakra-colors-cyan-600); --chakra-colors-cyan-focus-ring: var(--chakra-colors-cyan-500); --chakra-shadows-xs: 0px 1px 2px color-mix(in srgb, colors.gray.900 10%, transparent),0px 0px 1px color-mix(in srgb, colors.gray.900 20%, transparent); --chakra-shadows-sm: 0px 2px 4px color-mix(in srgb, colors.gray.900 10%, transparent),0px 0px 1px color-mix(in srgb, colors.gray.900 30%, transparent); --chakra-shadows-md: 0px 4px 8px color-mix(in srgb, colors.gray.900 10%, transparent),0px 0px 1px color-mix(in srgb, colors.gray.900 30%, transparent); --chakra-shadows-lg: 0px 8px 16px color-mix(in srgb, colors.gray.900 10%, transparent),0px 0px 1px color-mix(in srgb, colors.gray.900 30%, transparent); --chakra-shadows-xl: 0px 16px 24px color-mix(in srgb, colors.gray.900 10%, transparent),0px 0px 1px color-mix(in srgb, colors.gray.900 30%, transparent); --chakra-shadows-2xl: 0px 24px 40px color-mix(in srgb, colors.gray.900 16%, transparent),0px 0px 1px color-mix(in srgb, colors.gray.900 30%, transparent); --chakra-shadows-inner: inset 0 2px 4px 0 color-mix(in srgb, black 5%, transparent); --chakra-shadows-inset: inset 0 0 0 1px color-mix(in srgb, black 5%, transparent); }
+  .dark, .dark .chakra-theme:not(.light) { --chakra-colors-bg: var(--chakra-colors-black); --chakra-colors-bg-subtle: colors\.gray\.950; --chakra-colors-bg-muted: colors\.gray\.900; --chakra-colors-bg-emphasized: colors\.gray\.800; --chakra-colors-bg-inverted: var(--chakra-colors-white); --chakra-colors-bg-panel: colors\.gray\.950; --chakra-colors-bg-error: colors\.red\.950; --chakra-colors-bg-warning: colors\.orange\.950; --chakra-colors-bg-success: colors\.green\.950; --chakra-colors-bg-info: colors\.blue\.950; --chakra-colors-fg: colors\.gray\.50; --chakra-colors-fg-muted: colors\.gray\.400; --chakra-colors-fg-subtle: colors\.gray\.500; --chakra-colors-fg-inverted: var(--chakra-colors-black); --chakra-colors-fg-error: colors\.red\.400; --chakra-colors-fg-warning: colors\.orange\.300; --chakra-colors-fg-success: colors\.green\.300; --chakra-colors-fg-info: colors\.blue\.300; --chakra-colors-border: colors\.gray\.800; --chakra-colors-border-muted: colors\.gray\.900; --chakra-colors-border-subtle: colors\.gray\.950; --chakra-colors-border-emphasized: colors\.gray\.700; --chakra-colors-border-inverted: colors\.gray\.200; --chakra-colors-border-error: colors\.red\.400; --chakra-colors-border-warning: colors\.orange\.400; --chakra-colors-border-success: colors\.green\.400; --chakra-colors-border-info: colors\.blue\.400; --chakra-colors-gray-contrast: var(--chakra-colors-black); --chakra-colors-gray-fg: colors\.gray\.200; --chakra-colors-gray-subtle: colors\.gray\.900; --chakra-colors-gray-muted: colors\.gray\.800; --chakra-colors-gray-emphasized: colors\.gray\.700; --chakra-colors-gray-solid: var(--chakra-colors-white); --chakra-colors-gray-focus-ring: colors\.gray\.400; --chakra-colors-red-contrast: white; --chakra-colors-red-fg: colors\.red\.300; --chakra-colors-red-subtle: colors\.red\.900; --chakra-colors-red-muted: colors\.red\.800; --chakra-colors-red-emphasized: colors\.red\.700; --chakra-colors-red-solid: colors\.red\.600; --chakra-colors-red-focus-ring: colors\.red\.500; --chakra-colors-orange-contrast: black; --chakra-colors-orange-fg: colors\.orange\.300; --chakra-colors-orange-subtle: colors\.orange\.900; --chakra-colors-orange-muted: colors\.orange\.800; --chakra-colors-orange-emphasized: colors\.orange\.700; --chakra-colors-orange-solid: colors\.orange\.500; --chakra-colors-orange-focus-ring: colors\.orange\.500; --chakra-colors-green-contrast: white; --chakra-colors-green-fg: colors\.green\.300; --chakra-colors-green-subtle: colors\.green\.900; --chakra-colors-green-muted: colors\.green\.800; --chakra-colors-green-emphasized: colors\.green\.700; --chakra-colors-green-solid: colors\.green\.600; --chakra-colors-green-focus-ring: colors\.green\.500; --chakra-colors-blue-contrast: white; --chakra-colors-blue-fg: colors\.blue\.300; --chakra-colors-blue-subtle: colors\.blue\.900; --chakra-colors-blue-muted: colors\.blue\.800; --chakra-colors-blue-emphasized: colors\.blue\.700; --chakra-colors-blue-solid: colors\.blue\.600; --chakra-colors-blue-focus-ring: colors\.blue\.500; --chakra-colors-yellow-contrast: black; --chakra-colors-yellow-fg: colors\.yellow\.300; --chakra-colors-yellow-subtle: colors\.yellow\.900; --chakra-colors-yellow-muted: colors\.yellow\.800; --chakra-colors-yellow-emphasized: colors\.yellow\.700; --chakra-colors-yellow-solid: colors\.yellow\.300; --chakra-colors-yellow-focus-ring: colors\.yellow\.500; --chakra-colors-teal-contrast: white; --chakra-colors-teal-fg: var(--chakra-colors-teal-300); --chakra-colors-teal-subtle: var(--chakra-colors-teal-900); --chakra-colors-teal-muted: var(--chakra-colors-teal-800); --chakra-colors-teal-emphasized: var(--chakra-colors-teal-700); --chakra-colors-teal-solid: var(--chakra-colors-teal-600); --chakra-colors-teal-focus-ring: var(--chakra-colors-teal-500); --chakra-colors-purple-contrast: white; --chakra-colors-purple-fg: var(--chakra-colors-purple-300); --chakra-colors-purple-subtle: var(--chakra-colors-purple-900); --chakra-colors-purple-muted: var(--chakra-colors-purple-800); --chakra-colors-purple-emphasized: var(--chakra-colors-purple-700); --chakra-colors-purple-solid: var(--chakra-colors-purple-600); --chakra-colors-purple-focus-ring: var(--chakra-colors-purple-500); --chakra-colors-pink-contrast: white; --chakra-colors-pink-fg: var(--chakra-colors-pink-300); --chakra-colors-pink-subtle: var(--chakra-colors-pink-900); --chakra-colors-pink-muted: var(--chakra-colors-pink-800); --chakra-colors-pink-emphasized: var(--chakra-colors-pink-700); --chakra-colors-pink-solid: var(--chakra-colors-pink-600); --chakra-colors-pink-focus-ring: var(--chakra-colors-pink-500); --chakra-colors-cyan-contrast: white; --chakra-colors-cyan-fg: var(--chakra-colors-cyan-300); --chakra-colors-cyan-subtle: var(--chakra-colors-cyan-900); --chakra-colors-cyan-muted: var(--chakra-colors-cyan-800); --chakra-colors-cyan-emphasized: var(--chakra-colors-cyan-700); --chakra-colors-cyan-solid: var(--chakra-colors-cyan-600); --chakra-colors-cyan-focus-ring: var(--chakra-colors-cyan-500); --chakra-shadows-xs: 0px 1px 1px color-mix(in srgb, black 64%, transparent),0px 0px 1px inset color-mix(in srgb, colors.gray.300 20%, transparent); --chakra-shadows-sm: 0px 2px 4px color-mix(in srgb, black 64%, transparent),0px 0px 1px inset color-mix(in srgb, colors.gray.300 30%, transparent); --chakra-shadows-md: 0px 4px 8px color-mix(in srgb, black 64%, transparent),0px 0px 1px inset color-mix(in srgb, colors.gray.300 30%, transparent); --chakra-shadows-lg: 0px 8px 16px color-mix(in srgb, black 64%, transparent),0px 0px 1px inset color-mix(in srgb, colors.gray.300 30%, transparent); --chakra-shadows-xl: 0px 16px 24px color-mix(in srgb, black 64%, transparent),0px 0px 1px inset color-mix(in srgb, colors.gray.300 30%, transparent); --chakra-shadows-2xl: 0px 24px 40px color-mix(in srgb, black 64%, transparent),0px 0px 1px inset color-mix(in srgb, colors.gray.300 30%, transparent); --chakra-shadows-inner: inset 0 2px 4px 0 black; --chakra-shadows-inset: inset 0 0 0 1px color-mix(in srgb, colors.gray.300 5%, transparent); }
+}
+
+/* --- Extracted <style> block #4 --- */
+.css-19irp3c { min-height: 100vh; display: flex; -webkit-box-pack: center; justify-content: center; margin: 0px; padding: 0px; z-index: 1; position: relative; }
+.css-1yasqv0 { height: 300vh; width: 100%; position: absolute; inset: 0px; z-index: -1; }
+.css-4rmlxi { width: 100%; display: flex; flex-direction: column; }
+.css-4c85rg { z-index: 100; }
+.css-1iibojv { padding: 30px; position: absolute; top: 0px; left: 0px; right: 0px; z-index: 98; }
+@media screen and (min-width: 62.5rem) {
+  .css-1iibojv { padding: 20px 40px; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-1iibojv { padding: 20px 60px; }
+}
+.css-1lekzkb { display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: justify; justify-content: space-between; }
+.css-1h2sv0j { display: flex; -webkit-box-align: center; align-items: center; gap: 10px; }
+.css-dlbvzo { object-fit: cover; color: var(--chakra-colors-white); height: 25px; }
+.css-ev58mf { font-size: 28px; font-weight: var(--chakra-font-weights-normal); letter-spacing: -1.28px; line-height: 100%; color: var(--chakra-colors-white); }
+@media screen and (min-width: 62.5rem) {
+  .css-ev58mf { font-size: 28px; }
+}
+.css-131ycfh { object-fit: cover; height: 25px; }
+.css-tfp0rg { display: flex; -webkit-box-pack: end; justify-content: flex-end; flex: 1 1 0%; gap: 50px; width: auto; }
+.css-trcbvg { display: flex; gap: 50px; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; }
+.css-p52heg { font-size: 16px; font-weight: var(--chakra-font-weights-normal); letter-spacing: 0px; line-height: 120%; color: var(--chakra-colors-white); cursor: pointer; }
+@media (hover: hover) {
+  .css-p52heg:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { opacity: 0.7; }
+}
+.css-7fmhrw { font-size: 16px; letter-spacing: 0px; line-height: 120%; color: var(--chakra-colors-white); cursor: pointer; }
+@media (hover: hover) {
+  .css-7fmhrw:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { opacity: 0.7; }
+}
+.css-1e9f8qo { background: var(--chakra-colors-black); --bg-currentcolor: var(--chakra-colors-black); color: var(--chakra-colors-white); font-size: 14px; font-weight: var(--chakra-font-weights-bold); border: none; border-radius: 0px; min-width: 120px; height: 50px; width: auto; padding-inline: 20px; display: none; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; white-space: nowrap; text-transform: uppercase; overflow: hidden; cursor: not-allowed; }
+@layer recipes {
+  .css-1e9f8qo { display: inline-flex; appearance: none; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; user-select: none; position: relative; border-radius: var(--chakra-radii-l2); white-space: nowrap; vertical-align: middle; border-width: 1px; border-color: var(--chakra-colors-transparent); cursor: var(--chakra-cursor-button); flex-shrink: 0; outline: 0px; line-height: 1.25rem; isolation: isolate; font-weight: var(--chakra-font-weights-medium); transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, translate, transform; transition-duration: var(--chakra-durations-moderate); --focus-ring-color: var(--chakra-colors-color-palette-focus-ring); height: var(--chakra-sizes-10); min-width: var(--chakra-sizes-10); font-size: var(--chakra-font-sizes-sm); padding-inline: var(--chakra-spacing-4); gap: var(--chakra-spacing-2); background: var(--chakra-colors-color-palette-solid); --bg-currentcolor: var(--chakra-colors-color-palette-solid); color: var(--chakra-colors-color-palette-contrast); }
+  .css-1e9f8qo:is(:focus-visible, [data-focus-visible]) { outline-width: var(--focus-ring-width, 2px); outline-offset: var(--focus-ring-offset, 2px); outline-style: var(--focus-ring-style, solid); outline-color: var(--focus-ring-color); }
+  .css-1e9f8qo:is(:disabled, [disabled], [data-disabled], [aria-disabled="true"]) { opacity: 0.5; cursor: not-allowed; }
+  .css-1e9f8qo :where(svg) { flex-shrink: 0; width: var(--chakra-sizes-5); height: var(--chakra-sizes-5); }
+  .css-1e9f8qo:is([aria-expanded="true"], [data-expanded], [data-state="expanded"]) { --mix-background: color-mix(in srgb, var(--chakra-colors-color-palette-solid) 90%, transparent); background: var(--mix-background, var(--chakra-colors-color-palette-solid)); --bg-currentcolor: var(--mix-background, var(--chakra-colors-color-palette-solid)); }
+  @media (hover: hover) {
+  .css-1e9f8qo:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { --mix-background: color-mix(in srgb, var(--chakra-colors-color-palette-solid) 90%, transparent); background: var(--mix-background, var(--chakra-colors-color-palette-solid)); --bg-currentcolor: var(--mix-background, var(--chakra-colors-color-palette-solid)); }
+}
+}
+@media screen and (min-width: 53.125rem) {
+  .css-1e9f8qo { display: flex; }
+}
+@media (hover: hover) {
+  .css-1e9f8qo:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { cursor: not-allowed; }
+}
+.css-1ygt0yw { display: none; position: fixed; top: 20px; right: 20px; z-index: 1001; }
+.css-7kddwf { display: flex; flex-direction: column; gap: 13.32px; }
+.css-ysxqjg { background: var(--chakra-colors-black-alpha-600); --bg-currentcolor: var(--chakra-colors-black-alpha-600); backdrop-filter: blur(8px); top: 90px; pointer-events: auto; cursor: pointer; }
+@layer recipes {
+  .css-ysxqjg { background: var(--chakra-colors-black-alpha-500); --bg-currentcolor: var(--chakra-colors-black-alpha-500); position: fixed; inset-inline-start: 0px; top: 0px; width: 100vw; height: 100dvh; z-index: var(--chakra-z-index-overlay); }
+  .css-ysxqjg:is([open], [data-open], [data-state="open"]) { animation-name: fade-in; animation-duration: var(--chakra-durations-slow); }
+  .css-ysxqjg:is([closed], [data-closed], [data-state="closed"]) { animation-name: fade-out; animation-duration: var(--chakra-durations-moderate); }
+}
+.css-w285g1 { top: 100px; height: calc(-100px + 100dvh); }
+@layer recipes {
+  .css-w285g1 { display: flex; width: 100vw; height: 100dvh; position: fixed; inset-inline-start: 0px; top: 0px; z-index: var(--chakra-z-index-modal); overscroll-behavior-y: none; justify-content: stretch; align-items: flex-end; }
+}
+.css-bgoqaa { background: var(--chakra-colors-black-alpha-800); --bg-currentcolor: var(--chakra-colors-black-alpha-800); backdrop-filter: blur(18px); }
+@layer recipes {
+  .css-bgoqaa { background: var(--chakra-colors-black-alpha-500); --bg-currentcolor: var(--chakra-colors-black-alpha-500); position: fixed; left: 0px; top: 0px; width: 100dvw; height: 100dvh; z-index: var(--z-index); }
+  .css-bgoqaa:is([open], [data-open], [data-state="open"]) { animation-name: fade-in; animation-duration: var(--chakra-durations-slow); }
+  .css-bgoqaa:is([closed], [data-closed], [data-state="closed"]) { animation-name: fade-out; animation-duration: var(--chakra-durations-moderate); }
+}
+@layer recipes {
+  .css-ec6hp { display: flex; width: 100dvw; height: 100dvh; position: fixed; left: 0px; top: 0px; --dialog-z-index: var(--chakra-z-index-modal); z-index: calc(var(--dialog-z-index) + var(--layer-index, 0)); -webkit-box-pack: center; justify-content: center; overscroll-behavior-y: none; overflow: auto; pointer-events: auto; -webkit-box-align: center; align-items: center; }
+}
+.css-13amvrw { display: flex; color: var(--chakra-colors-white); height: 100vh; -webkit-box-align: end; align-items: end; padding: 80px 20px 40px; max-width: 100%; margin-inline: auto; -webkit-box-pack: start; justify-content: flex-start; gap: 0px; }
+@media screen and (min-width: 62.5rem) {
+  .css-13amvrw { -webkit-box-align: center; align-items: center; padding: 90px 40px 40px; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-13amvrw { padding: 120px 60px 60px; max-width: 1800px; -webkit-box-pack: center; justify-content: center; gap: 200px; }
+}
+.css-4lc9e { display: flex; flex-direction: column; gap: 60px; flex: 1 1 0%; max-width: 100%; width: 100%; -webkit-box-pack: justify; justify-content: space-between; }
+@media screen and (min-width: 62.5rem) {
+  .css-4lc9e { -webkit-box-pack: center; justify-content: center; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-4lc9e { flex: 0 1 auto; max-width: 1000px; width: auto; }
+}
+.css-j7qwjs { display: flex; flex-direction: column; }
+.css-9cvnhv { font-size: 55px; font-weight: var(--chakra-font-weights-normal); letter-spacing: -1.5px; line-height: 100%; }
+@media screen and (min-width: 62.5rem) {
+  .css-9cvnhv { font-size: 62px; letter-spacing: -2.8px; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-9cvnhv { font-size: 72px; letter-spacing: -3.2px; }
+}
+.css-18wosqm { color: var(--chakra-colors-green_accent); font-weight: var(--chakra-font-weights-bold); }
+.css-17aqckq { display: flex; flex-direction: column; gap: 20px; -webkit-box-align: start; align-items: start; width: min(100%, 600px); }
+@media screen and (min-width: 62.5rem) {
+  .css-17aqckq { -webkit-box-align: start; align-items: start; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-17aqckq { width: 70%; }
+}
+.css-1w0ds4b { font-size: 16px; font-weight: var(--chakra-font-weights-bold); letter-spacing: 0px; line-height: 100%; text-transform: uppercase; color: var(--chakra-colors-white40); }
+@media screen and (min-width: 62.5rem) {
+  .css-1w0ds4b { font-size: 16px; }
+}
+.css-x4413r { display: flex; gap: 30px; width: 100%; -webkit-box-align: center; align-items: center; }
+@media screen and (min-width: 62.5rem) {
+  .css-x4413r { -webkit-box-align: center; align-items: center; }
+}
+.css-hboir5 { display: flex; width: 100%; }
+.css-1ywmljq { object-fit: cover; width: 100%; }
+.css-9ux6qn { height: 100%; width: 100%; flex-shrink: 0; }
+@media screen and (min-width: 62.5rem) {
+  .css-9ux6qn { width: 500px; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-9ux6qn { width: 540px; }
+}
+.css-1w7d4we { height: 100%; border-radius: 20px; width: 100%; overflow: hidden; }
+.css-9ujm65 { display: flex; height: 100%; width: 100%; flex-direction: column; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; gap: 20px; }
+.css-18aema1 { position: relative; width: 460px; height: 460px; }
+.css-1acg51j { display: flex; -webkit-box-pack: center; justify-content: center; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 100; background-color: rgba(0, 0, 0, 0.533); --bg-currentcolor: #00000088; backdrop-filter: blur(3px); border-radius: 100px; padding: 10px; -webkit-box-align: center; align-items: center; }
+.css-17qn1pm { font-size: 55px; letter-spacing: -1.5px; line-height: 100%; color: var(--chakra-colors-white); text-transform: none; text-align: center; }
+@media screen and (min-width: 62.5rem) {
+  .css-17qn1pm { font-size: 62px; letter-spacing: -2.8px; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-17qn1pm { font-size: 72px; letter-spacing: -3.2px; }
+}
+.css-itt1in { color: rgb(22, 43, 38); }
+.css-1ttbz5d { display: flex; flex-direction: column; gap: 10px; width: 100%; opacity: 1; }
+.css-idmjxk { display: flex; flex-direction: column; gap: 0px; width: 100%; }
+.css-69i1ev { display: flex; -webkit-box-pack: justify; justify-content: space-between; -webkit-box-align: center; align-items: center; }
+.css-172hjuw { display: flex; -webkit-box-align: center; align-items: center; gap: 6px; }
+.css-1u6ck79 { font-size: 16px; font-weight: var(--chakra-font-weights-normal); letter-spacing: 0px; line-height: 120%; color: var(--chakra-colors-white); }
+.css-7cpd0 { -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; background: var(--chakra-colors-transparent); --bg-currentcolor: var(--chakra-colors-transparent); border: none; color: var(--chakra-colors-white40); padding: 0px; cursor: help; }
+.css-13b52y { display: flex; -webkit-box-align: center; align-items: center; gap: 10px; position: relative; }
+.css-v1u3zz { display: flex; flex: 1 1 0%; position: relative; }
+.css-fbo4ei { font-size: 50px; letter-spacing: -2px; height: auto; color: var(--chakra-colors-white); border: none; }
+@layer recipes {
+  .css-fbo4ei { width: 100%; min-width: var(--input-height); outline: 0px; position: relative; appearance: none; text-align: start; border-radius: var(--chakra-radii-l2); height: var(--input-height); --focus-color: var(--chakra-colors-color-palette-focus-ring); --error-color: var(--chakra-colors-border-error); font-size: var(--chakra-font-sizes-sm); line-height: 1.25rem; padding-inline: var(--chakra-spacing-3); --input-height: var(--chakra-sizes-10); background: var(--chakra-colors-transparent); --bg-currentcolor: var(--chakra-colors-transparent); border-width: 1px; border-color: var(--chakra-colors-border); --focus-ring-color: var(--focus-color); }
+  .css-fbo4ei:is(:disabled, [disabled], [data-disabled], [aria-disabled="true"]) { opacity: 0.5; cursor: not-allowed; }
+  .css-fbo4ei:is([data-invalid], [aria-invalid="true"], [data-state="invalid"]) { --focus-ring-color: var(--error-color); border-color: var(--error-color); }
+  .css-fbo4ei:is(:focus-visible, [data-focus-visible]) { outline-offset: 0px; outline-width: var(--focus-ring-width, 1px); outline-color: var(--focus-ring-color); outline-style: var(--focus-ring-style, solid); border-color: var(--focus-ring-color); }
+}
+.css-fbo4ei::-webkit-input-placeholder { color: var(--chakra-colors-white); opacity: 0.5; }
+.css-fbo4ei::placeholder, .css-fbo4ei[data-placeholder] { color: var(--chakra-colors-white); opacity: 0.5; }
+.css-13qg0qr { display: flex; flex-direction: column; align-items: flex-end; flex-shrink: 0; }
+.css-wpwytb { display: flex; gap: 4px; -webkit-box-align: center; align-items: center; }
+.css-j1kg71 { font-size: 16px; font-weight: var(--chakra-font-weights-normal); letter-spacing: 0px; line-height: 120%; color: var(--chakra-colors-white40); }
+.css-10kzjb { display: flex; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; margin-top: 0px; }
+.css-ntktx3 { display: flex; flex-direction: column; gap: 10px; width: 100%; }
+.css-lnv54q { display: flex; -webkit-box-align: end; align-items: end; gap: 10px; -webkit-box-pack: justify; justify-content: space-between; overflow: hidden; }
+.css-x76xj2 { font-size: 45px; letter-spacing: -2px; line-height: 100%; text-wrap: nowrap; margin-bottom: 10px; color: var(--chakra-colors-white); overflow: hidden; max-width: 100%; flex-shrink: 1; text-align: right; }
+.css-19r0lzm { display: flex; gap: 4px; -webkit-box-align: end; align-items: end; }
+.css-v4ggmq { font-size: 18px; font-weight: var(--chakra-font-weights-normal); letter-spacing: -0.54px; line-height: 120%; color: var(--chakra-colors-white); text-align: right; height: 100%; }
+.css-10av614 { font-size: 28px; font-weight: var(--chakra-font-weights-normal); letter-spacing: -1.28px; line-height: 100%; color: var(--chakra-colors-white); text-align: right; height: 100%; }
+@media screen and (min-width: 62.5rem) {
+  .css-10av614 { font-size: 28px; }
+}
+.css-1tljr4k { display: flex; -webkit-box-align: center; align-items: center; width: 100%; margin-top: 20px; gap: 5px; -webkit-box-pack: center; justify-content: center; }
+.css-1ypuzin { font-size: 14px; color: var(--chakra-colors-white40); }
+.css-1dnaxzp { display: flex; -webkit-box-align: center; align-items: center; gap: 5px; }
+.css-193svu4 { font-weight: var(--chakra-font-weights-bold); color: var(--chakra-colors-white40); }
+.css-lzge92 { font-size: 14px; color: var(--chakra-colors-white40); font-weight: var(--chakra-font-weights-bold); }
+.css-pkautu { display: flex; flex-direction: column; gap: 15px; -webkit-box-align: center; align-items: center; width: 100%; }
+.css-2licy { background: var(--chakra-colors-white); --bg-currentcolor: var(--chakra-colors-white); color: var(--chakra-colors-black); font-size: 14px; font-weight: var(--chakra-font-weights-bold); border: none; border-radius: 50px; min-width: 170px; height: 60px; width: auto; padding-inline: 30px; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; white-space: nowrap; text-transform: uppercase; overflow: hidden; cursor: not-allowed; }
+@layer recipes {
+  .css-2licy { display: inline-flex; appearance: none; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; user-select: none; position: relative; border-radius: var(--chakra-radii-l2); white-space: nowrap; vertical-align: middle; border-width: 1px; border-color: var(--chakra-colors-transparent); cursor: var(--chakra-cursor-button); flex-shrink: 0; outline: 0px; line-height: 1.25rem; isolation: isolate; font-weight: var(--chakra-font-weights-medium); transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, translate, transform; transition-duration: var(--chakra-durations-moderate); --focus-ring-color: var(--chakra-colors-color-palette-focus-ring); height: var(--chakra-sizes-10); min-width: var(--chakra-sizes-10); font-size: var(--chakra-font-sizes-sm); padding-inline: var(--chakra-spacing-4); gap: var(--chakra-spacing-2); background: var(--chakra-colors-color-palette-solid); --bg-currentcolor: var(--chakra-colors-color-palette-solid); color: var(--chakra-colors-color-palette-contrast); }
+  .css-2licy:is(:focus-visible, [data-focus-visible]) { outline-width: var(--focus-ring-width, 2px); outline-offset: var(--focus-ring-offset, 2px); outline-style: var(--focus-ring-style, solid); outline-color: var(--focus-ring-color); }
+  .css-2licy:is(:disabled, [disabled], [data-disabled], [aria-disabled="true"]) { opacity: 0.5; cursor: not-allowed; }
+  .css-2licy :where(svg) { flex-shrink: 0; width: var(--chakra-sizes-5); height: var(--chakra-sizes-5); }
+  .css-2licy:is([aria-expanded="true"], [data-expanded], [data-state="expanded"]) { --mix-background: color-mix(in srgb, var(--chakra-colors-color-palette-solid) 90%, transparent); background: var(--mix-background, var(--chakra-colors-color-palette-solid)); --bg-currentcolor: var(--mix-background, var(--chakra-colors-color-palette-solid)); }
+  @media (hover: hover) {
+  .css-2licy:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { --mix-background: color-mix(in srgb, var(--chakra-colors-color-palette-solid) 90%, transparent); background: var(--mix-background, var(--chakra-colors-color-palette-solid)); --bg-currentcolor: var(--mix-background, var(--chakra-colors-color-palette-solid)); }
+}
+}
+@media (hover: hover) {
+  .css-2licy:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { cursor: not-allowed; }
+}
+.css-14q46b9 { background: var(--chakra-colors-black-alpha-600); --bg-currentcolor: var(--chakra-colors-black-alpha-600); backdrop-filter: blur(8px); }
+@layer recipes {
+  .css-14q46b9 { background: var(--chakra-colors-black-alpha-500); --bg-currentcolor: var(--chakra-colors-black-alpha-500); position: fixed; left: 0px; top: 0px; width: 100dvw; height: 100dvh; z-index: var(--z-index); }
+  .css-14q46b9:is([open], [data-open], [data-state="open"]) { animation-name: fade-in; animation-duration: var(--chakra-durations-slow); }
+  .css-14q46b9:is([closed], [data-closed], [data-state="closed"]) { animation-name: fade-out; animation-duration: var(--chakra-durations-moderate); }
+}
+.css-gh02lf { display: flex; -webkit-box-align: center; align-items: center; gap: 5px; font-size: 16px; letter-spacing: 0px; line-height: 100%; text-transform: none; color: var(--chakra-colors-white); }
+@media screen and (min-width: 62.5rem) {
+  .css-gh02lf { font-size: 16px; }
+}
+.css-14jn7ew { object-fit: cover; height: 15px; }
+.css-aveqda { height: auto; position: relative; }
+@media screen and (min-width: 62.5rem) {
+  .css-aveqda { height: 200vh; }
+}
+.css-137xvhh { display: flex; width: 100%; height: auto; top: 0px; position: relative; overflow: hidden; padding: 0px; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; }
+@media screen and (min-width: 62.5rem) {
+  .css-137xvhh { height: 100vh; position: sticky; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-137xvhh { padding: 100px 50px; }
+}
+.css-1bbkdlj { background: var(--chakra-colors-white); --bg-currentcolor: var(--chakra-colors-white); padding: 40px 20px; height: 100%; width: 100%; border-radius: 0px; gap: 100px; display: flex; -webkit-box-align: start; align-items: start; -webkit-box-pack: justify; justify-content: space-between; flex-direction: column; position: relative; z-index: 1; }
+@media screen and (min-width: 62.5rem) {
+  .css-1bbkdlj { padding: 80px; border-radius: 50px; gap: 0px; }
+}
+.css-1thbayf { display: flex; -webkit-box-align: start; align-items: start; -webkit-box-pack: start; justify-content: start; flex-direction: column; gap: 20px; position: relative; z-index: 1; }
+.css-r15xu8 { font-size: 42px; font-weight: var(--chakra-font-weights-normal); letter-spacing: -2px; line-height: 120%; text-align: start; max-width: 1100px; }
+@media screen and (min-width: 62.5rem) {
+  .css-r15xu8 { font-size: 56px; font-weight: var(--chakra-font-weights-normal); letter-spacing: -2.5px; line-height: 100%; }
+}
+.css-7oa3gt { font-weight: var(--chakra-font-weights-bold); }
+.css-ra81i8 { display: flex; position: relative; width: 100%; flex-direction: column; gap: 40px; }
+@media screen and (min-width: 62.5rem) {
+  .css-ra81i8 { flex-direction: row; gap: 0px; }
+}
+.css-1qi9cbr { display: flex; -webkit-box-align: start; align-items: start; -webkit-box-pack: start; justify-content: start; flex-direction: column; gap: 5px; width: 100%; }
+@media screen and (min-width: 62.5rem) {
+  .css-1qi9cbr { width: 60%; }
+}
+.css-1xilx2c { font-size: 18px; font-weight: var(--chakra-font-weights-normal); letter-spacing: -0.54px; line-height: 170%; }
+@media screen and (min-width: 62.5rem) {
+  .css-1xilx2c { font-size: 42px; font-weight: var(--chakra-font-weights-normal); letter-spacing: -2px; line-height: 120%; }
+}
+.css-k008qs { display: flex; }
+.css-1vzcrl0 { font-size: 80px; letter-spacing: -3px; font-weight: var(--chakra-font-weights-bold); color: rgb(0, 123, 80); line-height: 100%; }
+@media screen and (min-width: 62.5rem) {
+  .css-1vzcrl0 { font-size: 140px; letter-spacing: -6px; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-1vzcrl0 { font-size: 160px; }
+}
+.css-10208iv { display: flex; -webkit-box-align: start; align-items: start; -webkit-box-pack: start; justify-content: start; flex-direction: column; gap: 5px; width: 100%; }
+@media screen and (min-width: 62.5rem) {
+  .css-10208iv { -webkit-box-pack: center; justify-content: center; width: 40%; }
+}
+.css-axw7ok { display: flex; -webkit-box-align: center; align-items: center; gap: 8px; }
+.css-10q4z2t { -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; background: var(--chakra-colors-transparent); --bg-currentcolor: var(--chakra-colors-transparent); border: none; color: rgb(0, 0, 0); padding: 0px; cursor: help; }
+.css-j1yq6a { font-size: 80px; line-height: 100%; letter-spacing: -3px; font-weight: var(--chakra-font-weights-bold); color: rgb(0, 123, 80); }
+@media screen and (min-width: 62.5rem) {
+  .css-j1yq6a { font-size: 140px; letter-spacing: -6px; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-j1yq6a { font-size: 160px; }
+}
+.css-1h7zjhm { height: auto; position: relative; background: var(--chakra-colors-white); --bg-currentcolor: var(--chakra-colors-white); }
+@media screen and (min-width: 62.5rem) {
+  .css-1h7zjhm { height: 300vh; }
+}
+.css-1crfvbk { display: flex; width: 100%; height: auto; top: 0px; position: relative; flex-direction: column; overflow: hidden; }
+@media screen and (min-width: 62.5rem) {
+  .css-1crfvbk { height: 100vh; position: sticky; }
+}
+.css-1iz0qos { display: flex; background: var(--chakra-colors-white); --bg-currentcolor: var(--chakra-colors-white); padding-top: 20px; padding-inline: 20px; padding-bottom: 20px; border-top: 2px solid; -webkit-box-align: start; align-items: start; -webkit-box-pack: start; justify-content: start; flex-direction: column; }
+@media screen and (min-width: 62.5rem) {
+  .css-1iz0qos { padding-top: 30px; padding-inline: 30px; padding-bottom: 20px; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-1iz0qos { padding-inline: 60px; }
+}
+.css-1js7xkp { font-size: 42px; font-weight: var(--chakra-font-weights-normal); letter-spacing: -2px; line-height: 120%; }
+.css-72g9c7 { display: flex; flex: 1 1 0%; flex-direction: column; padding-inline: 20px; padding-top: 20px; padding-bottom: 20px; }
+@media screen and (min-width: 62.5rem) {
+  .css-72g9c7 { flex-direction: row; padding-inline: 30px; padding-top: 0px; padding-bottom: 20px; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-72g9c7 { padding-inline: 60px; padding-top: 0px; }
+}
+.css-qsdt7n { display: none; flex: 1 1 0%; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; padding: 40px; min-width: 620px; max-width: 100%; border-radius: 20px; }
+@media screen and (min-width: 62.5rem) {
+  .css-qsdt7n { display: flex; }
+}
+.css-88z7lz { display: flex; gap: 30px; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; }
+.css-1pf5obx { font-size: 16px; font-weight: var(--chakra-font-weights-bold); letter-spacing: 0px; line-height: 100%; text-transform: uppercase; color: var(--chakra-colors-white); text-align: center; white-space: nowrap; }
+@media screen and (min-width: 62.5rem) {
+  .css-1pf5obx { font-size: 16px; }
+}
+.css-14slx4a { display: flex; width: 60px; flex-shrink: 0; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; }
+.css-m1z2gn { object-fit: cover; height: 60px; transform: rotate(-90deg); }
+.css-1765w { font-size: 16px; font-weight: var(--chakra-font-weights-bold); letter-spacing: 0px; line-height: 100%; text-transform: none; color: var(--chakra-colors-white); text-align: center; white-space: nowrap; }
+@media screen and (min-width: 62.5rem) {
+  .css-1765w { font-size: 16px; }
+}
+.css-1c6jjyg { display: flex; padding-left: 0px; flex: 1 1 0%; background: var(--chakra-colors-white); --bg-currentcolor: var(--chakra-colors-white); flex-direction: column; height: 100%; position: relative; overflow-x: hidden; }
+@media screen and (min-width: 62.5rem) {
+  .css-1c6jjyg { padding-left: 30px; }
+}
+.css-tlqg04 { position: absolute; top: 0px; left: 20px; width: 5px; height: 25%; background: var(--chakra-colors-black); --bg-currentcolor: var(--chakra-colors-black); z-index: 0; }
+.css-1feapus { display: flex; flex-direction: column; gap: 8px; padding-left: 0px; padding-right: 0px; margin-bottom: 60px; flex: 1 1 0%; position: relative; z-index: 1; -webkit-box-pack: center; justify-content: center; }
+@media screen and (min-width: 62.5rem) {
+  .css-1feapus { padding-left: 40px; padding-right: 40px; margin-bottom: 0px; }
+}
+.css-15q091u { display: flex; -webkit-box-align: center; align-items: center; gap: 20px; }
+.css-1lnx6kw { font-size: 28px; font-weight: var(--chakra-font-weights-bold); letter-spacing: -1.28px; line-height: 100%; }
+@media screen and (min-width: 62.5rem) {
+  .css-1lnx6kw { font-size: 28px; }
+}
+.css-i6bazn { overflow: hidden; }
+.css-7ac527 { font-size: 18px; font-weight: var(--chakra-font-weights-normal); letter-spacing: -0.54px; line-height: 170%; max-width: 700px; }
+.css-1od4hg0 { position: relative; height: 50vh; overflow: hidden; background: var(--chakra-colors-green); --bg-currentcolor: var(--chakra-colors-green); padding: 30px; }
+@media screen and (min-width: 62.5rem) {
+  .css-1od4hg0 { height: auto; padding: 40px; }
+}
+@media screen and (min-width: 87.5rem) {
+  .css-1od4hg0 { padding: 60px; }
+}
+.css-1d8k8ed { display: flex; flex-direction: column; -webkit-box-pack: center; justify-content: center; height: 100%; }
+.css-1w6au9t { display: flex; flex-direction: column; -webkit-box-align: end; align-items: end; gap: 20px; position: relative; }
+.css-1nx2ien { width: 100%; position: relative; z-index: 0; }
+.css-c2oybn { display: flex; position: absolute; width: 100%; right: 0px; bottom: 0px; flex-direction: row; -webkit-box-pack: justify; justify-content: space-between; gap: 20px; -webkit-box-align: end; align-items: end; }
+.css-10uvc2t { font-size: 28px; font-weight: var(--chakra-font-weights-normal); letter-spacing: -1.28px; line-height: 100%; color: var(--chakra-colors-white); text-wrap: nowrap; text-align: left; }
+@media screen and (min-width: 62.5rem) {
+  .css-10uvc2t { font-size: 28px; }
+}
+.css-kl5uk3 { display: flex; gap: 20px; }
+.css-1ag8rgf { font-size: 16px; font-weight: var(--chakra-font-weights-normal); letter-spacing: 0px; line-height: 120%; color: var(--chakra-colors-white); opacity: 0.5; }
+.css-1v82th8 { font-size: 16px; font-weight: var(--chakra-font-weights-normal); letter-spacing: 0px; line-height: 120%; color: var(--chakra-colors-white); opacity: 0.5; text-align: right; cursor: pointer; }
+@media (hover: hover) {
+  .css-1v82th8:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { opacity: 0.7; }
+}
+.css-12pcdvd { position: fixed; right: 10px; top: 10px; width: 8px; height: 100vh; background: var(--chakra-colors-transparent); --bg-currentcolor: var(--chakra-colors-transparent); z-index: 9999; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+.css-1l44wnu { background: var(--chakra-colors-black); --bg-currentcolor: var(--chakra-colors-black); color: var(--chakra-colors-white); font-size: 14px; font-weight: var(--chakra-font-weights-bold); border: none; border-radius: 0px; min-width: 120px; height: 50px; width: 165px; padding-inline: 20px; display: none; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; white-space: nowrap; text-transform: uppercase; overflow: hidden; cursor: pointer; }
+@layer recipes {
+  .css-1l44wnu { display: inline-flex; appearance: none; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; user-select: none; position: relative; border-radius: var(--chakra-radii-l2); white-space: nowrap; vertical-align: middle; border-width: 1px; border-color: var(--chakra-colors-transparent); cursor: var(--chakra-cursor-button); flex-shrink: 0; outline: 0px; line-height: 1.25rem; isolation: isolate; font-weight: var(--chakra-font-weights-medium); transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, translate, transform; transition-duration: var(--chakra-durations-moderate); --focus-ring-color: var(--chakra-colors-color-palette-focus-ring); height: var(--chakra-sizes-10); min-width: var(--chakra-sizes-10); font-size: var(--chakra-font-sizes-sm); padding-inline: var(--chakra-spacing-4); gap: var(--chakra-spacing-2); background: var(--chakra-colors-color-palette-solid); --bg-currentcolor: var(--chakra-colors-color-palette-solid); color: var(--chakra-colors-color-palette-contrast); }
+  .css-1l44wnu:is(:focus-visible, [data-focus-visible]) { outline-width: var(--focus-ring-width, 2px); outline-offset: var(--focus-ring-offset, 2px); outline-style: var(--focus-ring-style, solid); outline-color: var(--focus-ring-color); }
+  .css-1l44wnu:is(:disabled, [disabled], [data-disabled], [aria-disabled="true"]) { opacity: 0.5; cursor: not-allowed; }
+  .css-1l44wnu :where(svg) { flex-shrink: 0; width: var(--chakra-sizes-5); height: var(--chakra-sizes-5); }
+  .css-1l44wnu:is([aria-expanded="true"], [data-expanded], [data-state="expanded"]) { --mix-background: color-mix(in srgb, var(--chakra-colors-color-palette-solid) 90%, transparent); background: var(--mix-background, var(--chakra-colors-color-palette-solid)); --bg-currentcolor: var(--mix-background, var(--chakra-colors-color-palette-solid)); }
+  @media (hover: hover) {
+  .css-1l44wnu:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { --mix-background: color-mix(in srgb, var(--chakra-colors-color-palette-solid) 90%, transparent); background: var(--mix-background, var(--chakra-colors-color-palette-solid)); --bg-currentcolor: var(--mix-background, var(--chakra-colors-color-palette-solid)); }
+}
+}
+@media screen and (min-width: 53.125rem) {
+  .css-1l44wnu { display: flex; }
+}
+@media (hover: hover) {
+  .css-1l44wnu:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { cursor: pointer; }
+}
+.css-175q8nf { background: var(--chakra-colors-white); --bg-currentcolor: var(--chakra-colors-white); color: var(--chakra-colors-black); font-size: 14px; font-weight: var(--chakra-font-weights-bold); border: none; border-radius: 50px; min-width: 170px; height: 60px; width: 184px; padding-inline: 30px; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; white-space: nowrap; text-transform: uppercase; overflow: hidden; cursor: not-allowed; }
+@layer recipes {
+  .css-175q8nf { display: inline-flex; appearance: none; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; user-select: none; position: relative; border-radius: var(--chakra-radii-l2); white-space: nowrap; vertical-align: middle; border-width: 1px; border-color: var(--chakra-colors-transparent); cursor: var(--chakra-cursor-button); flex-shrink: 0; outline: 0px; line-height: 1.25rem; isolation: isolate; font-weight: var(--chakra-font-weights-medium); transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, translate, transform; transition-duration: var(--chakra-durations-moderate); --focus-ring-color: var(--chakra-colors-color-palette-focus-ring); height: var(--chakra-sizes-10); min-width: var(--chakra-sizes-10); font-size: var(--chakra-font-sizes-sm); padding-inline: var(--chakra-spacing-4); gap: var(--chakra-spacing-2); background: var(--chakra-colors-color-palette-solid); --bg-currentcolor: var(--chakra-colors-color-palette-solid); color: var(--chakra-colors-color-palette-contrast); }
+  .css-175q8nf:is(:focus-visible, [data-focus-visible]) { outline-width: var(--focus-ring-width, 2px); outline-offset: var(--focus-ring-offset, 2px); outline-style: var(--focus-ring-style, solid); outline-color: var(--focus-ring-color); }
+  .css-175q8nf:is(:disabled, [disabled], [data-disabled], [aria-disabled="true"]) { opacity: 0.5; cursor: not-allowed; }
+  .css-175q8nf :where(svg) { flex-shrink: 0; width: var(--chakra-sizes-5); height: var(--chakra-sizes-5); }
+  .css-175q8nf:is([aria-expanded="true"], [data-expanded], [data-state="expanded"]) { --mix-background: color-mix(in srgb, var(--chakra-colors-color-palette-solid) 90%, transparent); background: var(--mix-background, var(--chakra-colors-color-palette-solid)); --bg-currentcolor: var(--mix-background, var(--chakra-colors-color-palette-solid)); }
+  @media (hover: hover) {
+  .css-175q8nf:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { --mix-background: color-mix(in srgb, var(--chakra-colors-color-palette-solid) 90%, transparent); background: var(--mix-background, var(--chakra-colors-color-palette-solid)); --bg-currentcolor: var(--mix-background, var(--chakra-colors-color-palette-solid)); }
+}
+}
+@media (hover: hover) {
+  .css-175q8nf:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { cursor: not-allowed; }
+}
+.css-1mdudcu { background: var(--chakra-colors-white); --bg-currentcolor: var(--chakra-colors-white); color: var(--chakra-colors-black); font-size: 14px; font-weight: var(--chakra-font-weights-bold); border: none; border-radius: 50px; min-width: 170px; height: 60px; width: 170px; padding-inline: 30px; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; white-space: nowrap; text-transform: uppercase; overflow: hidden; cursor: not-allowed; }
+@layer recipes {
+  .css-1mdudcu { display: inline-flex; appearance: none; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; user-select: none; position: relative; border-radius: var(--chakra-radii-l2); white-space: nowrap; vertical-align: middle; border-width: 1px; border-color: var(--chakra-colors-transparent); cursor: var(--chakra-cursor-button); flex-shrink: 0; outline: 0px; line-height: 1.25rem; isolation: isolate; font-weight: var(--chakra-font-weights-medium); transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, translate, transform; transition-duration: var(--chakra-durations-moderate); --focus-ring-color: var(--chakra-colors-color-palette-focus-ring); height: var(--chakra-sizes-10); min-width: var(--chakra-sizes-10); font-size: var(--chakra-font-sizes-sm); padding-inline: var(--chakra-spacing-4); gap: var(--chakra-spacing-2); background: var(--chakra-colors-color-palette-solid); --bg-currentcolor: var(--chakra-colors-color-palette-solid); color: var(--chakra-colors-color-palette-contrast); }
+  .css-1mdudcu:is(:focus-visible, [data-focus-visible]) { outline-width: var(--focus-ring-width, 2px); outline-offset: var(--focus-ring-offset, 2px); outline-style: var(--focus-ring-style, solid); outline-color: var(--focus-ring-color); }
+  .css-1mdudcu:is(:disabled, [disabled], [data-disabled], [aria-disabled="true"]) { opacity: 0.5; cursor: not-allowed; }
+  .css-1mdudcu :where(svg) { flex-shrink: 0; width: var(--chakra-sizes-5); height: var(--chakra-sizes-5); }
+  .css-1mdudcu:is([aria-expanded="true"], [data-expanded], [data-state="expanded"]) { --mix-background: color-mix(in srgb, var(--chakra-colors-color-palette-solid) 90%, transparent); background: var(--mix-background, var(--chakra-colors-color-palette-solid)); --bg-currentcolor: var(--mix-background, var(--chakra-colors-color-palette-solid)); }
+  @media (hover: hover) {
+  .css-1mdudcu:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { --mix-background: color-mix(in srgb, var(--chakra-colors-color-palette-solid) 90%, transparent); background: var(--mix-background, var(--chakra-colors-color-palette-solid)); --bg-currentcolor: var(--mix-background, var(--chakra-colors-color-palette-solid)); }
+}
+}
+@media (hover: hover) {
+  .css-1mdudcu:is(:hover, [data-hover]):not(:disabled, [data-disabled]) { cursor: not-allowed; }
+}
+.css-6mf54v { display: flex; flex-direction: column; gap: 30px; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; }
+.css-phuwhg { font-size: 16px; font-weight: var(--chakra-font-weights-bold); letter-spacing: 0px; line-height: 100%; text-transform: uppercase; color: var(--chakra-colors-black); text-align: center; }
+@media screen and (min-width: 62.5rem) {
+  .css-phuwhg { font-size: 16px; }
+}
+.css-1u4jgm2 { object-fit: cover; height: 60px; }
+.css-16h9cno { font-size: 16px; font-weight: var(--chakra-font-weights-bold); letter-spacing: 0px; line-height: 100%; text-transform: uppercase; color: var(--chakra-colors-white); text-align: center; }
+@media screen and (min-width: 62.5rem) {
+  .css-16h9cno { font-size: 16px; }
+}
+.css-nkthgr { font-size: 18px; font-weight: var(--chakra-font-weights-normal); letter-spacing: -0.54px; line-height: 170%; color: var(--chakra-colors-white); text-align: center; }
+.css-1ajp4jy { object-fit: cover; height: 30px; }
+.css-9rrz72 { font-size: 16px; font-weight: var(--chakra-font-weights-bold); letter-spacing: 0px; line-height: 100%; text-transform: none; color: var(--chakra-colors-white); text-align: center; }
+@media screen and (min-width: 62.5rem) {
+  .css-9rrz72 { font-size: 16px; }
+}
+
+/* --- Extracted <style> block #5 --- */
+@keyframes w3m-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1) rotate(-1deg);
+        }
+        40% {
+          transform: scale(1) rotate(1.5deg);
+        }
+        60% {
+          transform: scale(1) rotate(-1.5deg);
+        }
+        80% {
+          transform: scale(1) rotate(1deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+      @keyframes w3m-iframe-fade-out {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes w3m-iframe-zoom-in {
+        0% {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes w3m-iframe-zoom-in-mobile {
+        0% {
+          transform: scale(0.95);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      :root {
+        --apkt-modal-width: 370px;
+
+        --apkt-visual-size-inherit: inherit;
+        --apkt-visual-size-sm: 40px;
+        --apkt-visual-size-md: 55px;
+        --apkt-visual-size-lg: 80px;
+
+        --apkt-path-network-sm: path(
+          'M15.4 2.1a5.21 5.21 0 0 1 5.2 0l11.61 6.7a5.21 5.21 0 0 1 2.61 4.52v13.4c0 1.87-1 3.59-2.6 4.52l-11.61 6.7c-1.62.93-3.6.93-5.22 0l-11.6-6.7a5.21 5.21 0 0 1-2.61-4.51v-13.4c0-1.87 1-3.6 2.6-4.52L15.4 2.1Z'
+        );
+
+        --apkt-path-network-md: path(
+          'M43.4605 10.7248L28.0485 1.61089C25.5438 0.129705 22.4562 0.129705 19.9515 1.61088L4.53951 10.7248C2.03626 12.2051 0.5 14.9365 0.5 17.886V36.1139C0.5 39.0635 2.03626 41.7949 4.53951 43.2752L19.9515 52.3891C22.4562 53.8703 25.5438 53.8703 28.0485 52.3891L43.4605 43.2752C45.9637 41.7949 47.5 39.0635 47.5 36.114V17.8861C47.5 14.9365 45.9637 12.2051 43.4605 10.7248Z'
+        );
+
+        --apkt-path-network-lg: path(
+          'M78.3244 18.926L50.1808 2.45078C45.7376 -0.150261 40.2624 -0.150262 35.8192 2.45078L7.6756 18.926C3.23322 21.5266 0.5 26.3301 0.5 31.5248V64.4752C0.5 69.6699 3.23322 74.4734 7.6756 77.074L35.8192 93.5492C40.2624 96.1503 45.7376 96.1503 50.1808 93.5492L78.3244 77.074C82.7668 74.4734 85.5 69.6699 85.5 64.4752V31.5248C85.5 26.3301 82.7668 21.5266 78.3244 18.926Z'
+        );
+
+        --apkt-width-network-sm: 36px;
+        --apkt-width-network-md: 48px;
+        --apkt-width-network-lg: 86px;
+
+        --apkt-duration-dynamic: 0ms;
+        --apkt-height-network-sm: 40px;
+        --apkt-height-network-md: 54px;
+        --apkt-height-network-lg: 96px;
+      }
+
+/* --- Extracted <style> block #6 --- */
+:root {
+      }
+
+/* --- Extracted <style> block #7 --- */
+:root {
+      }
+
+/* --- Extracted <style> block #8 --- */
+:root {--apkt-colors-black:#202020;--apkt-colors-white:#FFFFFF;--apkt-colors-white010:rgba(255, 255, 255, 0.1);--apkt-colors-accent010:rgba(9, 136, 240, 0.1);--apkt-colors-accent020:rgba(9, 136, 240, 0.2);--apkt-colors-accent030:rgba(9, 136, 240, 0.3);--apkt-colors-accent040:rgba(9, 136, 240, 0.4);--apkt-colors-accent050:rgba(9, 136, 240, 0.5);--apkt-colors-accent060:rgba(9, 136, 240, 0.6);--apkt-colors-accent070:rgba(9, 136, 240, 0.7);--apkt-colors-accent080:rgba(9, 136, 240, 0.8);--apkt-colors-accent090:rgba(9, 136, 240, 0.9);--apkt-colors-accent100:rgba(9, 136, 240, 1.0);--apkt-colors-accentSecondary010:rgba(199, 185, 148, 0.1);--apkt-colors-accentSecondary020:rgba(199, 185, 148, 0.2);--apkt-colors-accentSecondary030:rgba(199, 185, 148, 0.3);--apkt-colors-accentSecondary040:rgba(199, 185, 148, 0.4);--apkt-colors-accentSecondary050:rgba(199, 185, 148, 0.5);--apkt-colors-accentSecondary060:rgba(199, 185, 148, 0.6);--apkt-colors-accentSecondary070:rgba(199, 185, 148, 0.7);--apkt-colors-accentSecondary080:rgba(199, 185, 148, 0.8);--apkt-colors-accentSecondary090:rgba(199, 185, 148, 0.9);--apkt-colors-accentSecondary100:rgba(199, 185, 148, 1.0);--apkt-colors-productWalletKit:#FFB800;--apkt-colors-productAppKit:#FF573B;--apkt-colors-productCloud:#0988F0;--apkt-colors-productDocumentation:#008847;--apkt-colors-neutrals050:#F6F6F6;--apkt-colors-neutrals100:#F3F3F3;--apkt-colors-neutrals200:#E9E9E9;--apkt-colors-neutrals300:#D0D0D0;--apkt-colors-neutrals400:#BBB;--apkt-colors-neutrals500:#9A9A9A;--apkt-colors-neutrals600:#6C6C6C;--apkt-colors-neutrals700:#4F4F4F;--apkt-colors-neutrals800:#363636;--apkt-colors-neutrals900:#2A2A2A;--apkt-colors-neutrals1000:#252525;--apkt-colors-semanticSuccess010:rgba(48, 164, 107, 0.1);--apkt-colors-semanticSuccess020:rgba(48, 164, 107, 0.2);--apkt-colors-semanticSuccess030:rgba(48, 164, 107, 0.3);--apkt-colors-semanticSuccess040:rgba(48, 164, 107, 0.4);--apkt-colors-semanticSuccess050:rgba(48, 164, 107, 0.5);--apkt-colors-semanticSuccess060:rgba(48, 164, 107, 0.6);--apkt-colors-semanticSuccess070:rgba(48, 164, 107, 0.7);--apkt-colors-semanticSuccess080:rgba(48, 164, 107, 0.8);--apkt-colors-semanticSuccess090:rgba(48, 164, 107, 0.9);--apkt-colors-semanticSuccess100:rgba(48, 164, 107, 1.0);--apkt-colors-semanticError010:rgba(223, 74, 52, 0.1);--apkt-colors-semanticError020:rgba(223, 74, 52, 0.2);--apkt-colors-semanticError030:rgba(223, 74, 52, 0.3);--apkt-colors-semanticError040:rgba(223, 74, 52, 0.4);--apkt-colors-semanticError050:rgba(223, 74, 52, 0.5);--apkt-colors-semanticError060:rgba(223, 74, 52, 0.6);--apkt-colors-semanticError070:rgba(223, 74, 52, 0.7);--apkt-colors-semanticError080:rgba(223, 74, 52, 0.8);--apkt-colors-semanticError090:rgba(223, 74, 52, 0.9);--apkt-colors-semanticError100:rgba(223, 74, 52, 1.0);--apkt-colors-semanticWarning010:rgba(243, 161, 63, 0.1);--apkt-colors-semanticWarning020:rgba(243, 161, 63, 0.2);--apkt-colors-semanticWarning030:rgba(243, 161, 63, 0.3);--apkt-colors-semanticWarning040:rgba(243, 161, 63, 0.4);--apkt-colors-semanticWarning050:rgba(243, 161, 63, 0.5);--apkt-colors-semanticWarning060:rgba(243, 161, 63, 0.6);--apkt-colors-semanticWarning070:rgba(243, 161, 63, 0.7);--apkt-colors-semanticWarning080:rgba(243, 161, 63, 0.8);--apkt-colors-semanticWarning090:rgba(243, 161, 63, 0.9);--apkt-colors-semanticWarning100:rgba(243, 161, 63, 1.0);--apkt-fontFamily-regular:Roobert, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;--apkt-fontFamily-mono:KHTekaMono;--apkt-fontWeight-regular:400;--apkt-fontWeight-medium:500;--apkt-textSize-h1:70px;--apkt-textSize-h2:61.60000000000001px;--apkt-textSize-h3:53.199999999999996px;--apkt-textSize-h4:44.800000000000004px;--apkt-textSize-h5:36.4px;--apkt-textSize-h6:28px;--apkt-textSize-large:22.400000000000002px;--apkt-textSize-medium:19.599999999999998px;--apkt-textSize-small:16.8px;--apkt-typography-h1-regular-mono-lineHeight:50px;--apkt-typography-h1-regular-mono-letterSpacing:-3px;--apkt-typography-h1-regular-lineHeight:50px;--apkt-typography-h1-regular-letterSpacing:-1px;--apkt-typography-h1-medium-lineHeight:50px;--apkt-typography-h1-medium-letterSpacing:-0.84px;--apkt-typography-h2-regular-mono-lineHeight:44px;--apkt-typography-h2-regular-mono-letterSpacing:-2.64px;--apkt-typography-h2-regular-lineHeight:44px;--apkt-typography-h2-regular-letterSpacing:-0.88px;--apkt-typography-h2-medium-lineHeight:44px;--apkt-typography-h2-medium-letterSpacing:-0.88px;--apkt-typography-h3-regular-mono-lineHeight:38px;--apkt-typography-h3-regular-mono-letterSpacing:-2.28px;--apkt-typography-h3-regular-lineHeight:38px;--apkt-typography-h3-regular-letterSpacing:-0.76px;--apkt-typography-h3-medium-lineHeight:38px;--apkt-typography-h3-medium-letterSpacing:-0.76px;--apkt-typography-h4-regular-mono-lineHeight:32px;--apkt-typography-h4-regular-mono-letterSpacing:-1.92px;--apkt-typography-h4-regular-lineHeight:32px;--apkt-typography-h4-regular-letterSpacing:-0.32px;--apkt-typography-h4-medium-lineHeight:32px;--apkt-typography-h4-medium-letterSpacing:-0.32px;--apkt-typography-h5-regular-mono-lineHeight:26px;--apkt-typography-h5-regular-mono-letterSpacing:-1.56px;--apkt-typography-h5-regular-lineHeight:26px;--apkt-typography-h5-regular-letterSpacing:-0.26px;--apkt-typography-h5-medium-lineHeight:26px;--apkt-typography-h5-medium-letterSpacing:-0.26px;--apkt-typography-h6-regular-mono-lineHeight:20px;--apkt-typography-h6-regular-mono-letterSpacing:-1.2px;--apkt-typography-h6-regular-lineHeight:20px;--apkt-typography-h6-regular-letterSpacing:-0.6px;--apkt-typography-h6-medium-lineHeight:20px;--apkt-typography-h6-medium-letterSpacing:-0.6px;--apkt-typography-lg-regular-mono-lineHeight:16px;--apkt-typography-lg-regular-mono-letterSpacing:-0.96px;--apkt-typography-lg-regular-lineHeight:18px;--apkt-typography-lg-regular-letterSpacing:-0.16px;--apkt-typography-lg-medium-lineHeight:18px;--apkt-typography-lg-medium-letterSpacing:-0.16px;--apkt-typography-md-regular-mono-lineHeight:14px;--apkt-typography-md-regular-mono-letterSpacing:-0.84px;--apkt-typography-md-regular-lineHeight:16px;--apkt-typography-md-regular-letterSpacing:-0.14px;--apkt-typography-md-medium-lineHeight:16px;--apkt-typography-md-medium-letterSpacing:-0.14px;--apkt-typography-sm-regular-mono-lineHeight:12px;--apkt-typography-sm-regular-mono-letterSpacing:-0.72px;--apkt-typography-sm-regular-lineHeight:14px;--apkt-typography-sm-regular-letterSpacing:-0.12px;--apkt-typography-sm-medium-lineHeight:14px;--apkt-typography-sm-medium-letterSpacing:-0.12px;--apkt-tokens-core-backgroundAccentPrimary:color-mix(in srgb, #ffffff 10%, var(--apkt-tokens-core-backgroundAccentPrimary-base));--apkt-tokens-core-backgroundAccentCertified:color-mix(in srgb, #ffffff 10%, #C7B994);--apkt-tokens-core-backgroundWalletKit:color-mix(in srgb, #ffffff 10%, #FFB800);--apkt-tokens-core-backgroundAppKit:color-mix(in srgb, #ffffff 10%, #FF573B);--apkt-tokens-core-backgroundCloud:color-mix(in srgb, #ffffff 10%, #0988F0);--apkt-tokens-core-backgroundDocumentation:color-mix(in srgb, #ffffff 10%, #008847);--apkt-tokens-core-backgroundSuccess:color-mix(in srgb, #ffffff 10%, rgba(48, 164, 107, 0.20));--apkt-tokens-core-backgroundError:color-mix(in srgb, #ffffff 10%, rgba(223, 74, 52, 0.20));--apkt-tokens-core-backgroundWarning:color-mix(in srgb, #ffffff 10%, rgba(243, 161, 63, 0.20));--apkt-tokens-core-textAccentPrimary:color-mix(in srgb, #ffffff 10%, #000000);--apkt-tokens-core-textAccentCertified:color-mix(in srgb, #ffffff 10%, #C7B994);--apkt-tokens-core-textWalletKit:color-mix(in srgb, #ffffff 10%, #FFB800);--apkt-tokens-core-textAppKit:color-mix(in srgb, #ffffff 10%, #FF573B);--apkt-tokens-core-textCloud:color-mix(in srgb, #ffffff 10%, #0988F0);--apkt-tokens-core-textDocumentation:color-mix(in srgb, #ffffff 10%, #008847);--apkt-tokens-core-textSuccess:color-mix(in srgb, #ffffff 10%, #30A46B);--apkt-tokens-core-textError:color-mix(in srgb, #ffffff 10%, #DF4A34);--apkt-tokens-core-textWarning:color-mix(in srgb, #ffffff 10%, #F3A13F);--apkt-tokens-core-borderAccentPrimary:color-mix(in srgb, #ffffff 10%, #000000);--apkt-tokens-core-borderSecondary:color-mix(in srgb, #ffffff 10%, #C7B994);--apkt-tokens-core-borderSuccess:color-mix(in srgb, #ffffff 10%, #30A46B);--apkt-tokens-core-borderError:color-mix(in srgb, #ffffff 10%, #DF4A34);--apkt-tokens-core-borderWarning:color-mix(in srgb, #ffffff 10%, #F3A13F);--apkt-tokens-core-foregroundAccent010:color-mix(in srgb, #ffffff 10%, rgba(9, 136, 240, 0.1));--apkt-tokens-core-foregroundAccent020:color-mix(in srgb, #ffffff 10%, rgba(9, 136, 240, 0.2));--apkt-tokens-core-foregroundAccent040:color-mix(in srgb, #ffffff 10%, rgba(9, 136, 240, 0.4));--apkt-tokens-core-foregroundAccent060:color-mix(in srgb, #ffffff 10%, rgba(9, 136, 240, 0.6));--apkt-tokens-core-foregroundSecondary020:color-mix(in srgb, #ffffff 10%, rgba(199, 185, 148, 0.2));--apkt-tokens-core-foregroundSecondary040:color-mix(in srgb, #ffffff 10%, rgba(199, 185, 148, 0.4));--apkt-tokens-core-foregroundSecondary060:color-mix(in srgb, #ffffff 10%, rgba(199, 185, 148, 0.6));--apkt-tokens-core-iconAccentPrimary:color-mix(in srgb, #ffffff 10%, #000000);--apkt-tokens-core-iconAccentCertified:color-mix(in srgb, #ffffff 10%, #C7B994);--apkt-tokens-core-iconSuccess:color-mix(in srgb, #ffffff 10%, #30A46B);--apkt-tokens-core-iconError:color-mix(in srgb, #ffffff 10%, #DF4A34);--apkt-tokens-core-iconWarning:color-mix(in srgb, #ffffff 10%, #F3A13F);--apkt-tokens-core-glass010:rgba(255, 255, 255, 0.1);--apkt-tokens-core-zIndex:9999;--apkt-tokens-theme-overlay:color-mix(in srgb, #ffffff 10%, rgba(230 , 230, 230, 0.5));--apkt-tokens-theme-backgroundPrimary:color-mix(in srgb, #ffffff 10%, var(--apkt-tokens-theme-backgroundPrimary-base));--apkt-tokens-theme-borderPrimaryDark:color-mix(in srgb, #ffffff 10%, #E9E9E9);--apkt-tokens-theme-backgroundInvert:color-mix(in srgb, #ffffff 10%, #202020);--apkt-tokens-theme-textPrimary:color-mix(in srgb, #ffffff 10%, #202020);--apkt-tokens-theme-textSecondary:color-mix(in srgb, #ffffff 10%, #9A9A9A);--apkt-tokens-theme-textTertiary:color-mix(in srgb, #ffffff 10%, #6C6C6C);--apkt-tokens-theme-textInvert:color-mix(in srgb, #ffffff 10%, #FFFFFF);--apkt-tokens-theme-borderPrimary:color-mix(in srgb, #ffffff 10%, #E9E9E9);--apkt-tokens-theme-borderSecondary:color-mix(in srgb, #ffffff 10%, #D0D0D0);--apkt-tokens-theme-foregroundPrimary:color-mix(in srgb, #ffffff 10%, #F3F3F3);--apkt-tokens-theme-foregroundSecondary:color-mix(in srgb, #ffffff 10%, #E9E9E9);--apkt-tokens-theme-foregroundTertiary:color-mix(in srgb, #ffffff 10%, #D0D0D0);--apkt-tokens-theme-iconDefault:color-mix(in srgb, #ffffff 10%, #9A9A9A);--apkt-tokens-theme-iconInverse:color-mix(in srgb, #ffffff 10%, #202020);--apkt-borderRadius-1:8px;--apkt-borderRadius-2:16px;--apkt-borderRadius-3:24px;--apkt-borderRadius-4:32px;--apkt-borderRadius-5:40px;--apkt-borderRadius-6:48px;--apkt-borderRadius-8:64px;--apkt-borderRadius-10:10px;--apkt-borderRadius-16:128px;--apkt-borderRadius-20:160px;--apkt-borderRadius-32:256px;--apkt-borderRadius-64:512px;--apkt-borderRadius-128:1024px;--apkt-borderRadius-round:9999px;--apkt-spacing-0:0px;--apkt-spacing-1:4px;--apkt-spacing-2:8px;--apkt-spacing-3:12px;--apkt-spacing-4:16px;--apkt-spacing-5:20px;--apkt-spacing-6:24px;--apkt-spacing-7:28px;--apkt-spacing-8:32px;--apkt-spacing-9:36px;--apkt-spacing-10:40px;--apkt-spacing-12:48px;--apkt-spacing-14:56px;--apkt-spacing-16:64px;--apkt-spacing-20:80px;--apkt-spacing-32:128px;--apkt-spacing-64:256px;--apkt-spacing-01:2px;--apkt-durations-xl:400ms;--apkt-durations-lg:200ms;--apkt-durations-md:125ms;--apkt-durations-sm:75ms;--apkt-easings-ease-out-power-2:cubic-bezier(0.23, 0.09, 0.08, 1.13);--apkt-easings-ease-out-power-1:cubic-bezier(0.12, 0.04, 0.2, 1.06);--apkt-easings-ease-in-power-2:cubic-bezier(0.92, -0.13, 0.77, 0.91);--apkt-easings-ease-in-power-1:cubic-bezier(0.88, -0.06, 0.8, 0.96);--apkt-easings-ease-inout-power-2:cubic-bezier(0.77, 0.09, 0.23, 1.13);--apkt-easings-ease-inout-power-1:cubic-bezier(0.88, 0.04, 0.12, 1.06);--apkt-tokens-theme-backgroundPrimary-base:#FFFFFF;--apkt-tokens-core-backgroundAccentPrimary-base:#0988F0;--w3m-font-family:Roobert, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;--w3m-accent:#000000;--w3m-color-mix:#ffffff;--w3m-color-mix-strength:10%;--w3m-font-size-master:14px;--w3m-border-radius-master:8px;}
+
+/* --- Extracted <style> block #9 --- */
+:root {
+  }
+
