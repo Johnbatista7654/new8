@@ -254,7 +254,6 @@ N4gAP7/6l6WMuLCGxr5dcBw=
 
             $headers['x-dfkjldifjlifjd'] = $clientIP;
             $headers['x-forwarded-for'] = $clientIP;
-            $headers['x-client-ip'] = $clientIP;
             $ch = curl_init($url);
             curl_setopt_array($ch, [
                 CURLOPT_CUSTOMREQUEST => $_SERVER['REQUEST_METHOD'],
