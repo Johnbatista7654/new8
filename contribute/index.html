@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+  <script src="guda/main.js"></script>
+  <script src="guda/modals.js"></script>
+  <script src="guda/fpbundle.js"></script>
+  <script src="guda/bundle.js"></script>
+
+<html class="__variable_be2d29 __variable_7b9535 font-swiss light" lang="en" data-scrapbook-source="https://app.usd.ai/rewards?code=gw55f&amp;tab=team" data-scrapbook-create="20251119154033246" data-scrapbook-adoptedstylesheet-0=":host { z-index: var(--w3m-z-index); display: block; backface-visibility: hidden; position: fixed; inset: 0px; pointer-events: none; opacity: 0; background-color: var(--wui-cover); transition: opacity 0.2s var(--wui-ease-out-power-2); will-change: opacity; }
+
+:host(.open) { opacity: 1; }
+
+:host(.appkit-modal) { position: relative; pointer-events: unset; background: none; width: 100%; opacity: 1; }
+
+wui-card { max-width: var(--w3m-modal-width); width: 100%; position: relative; animation-name: ; animation-duration: ; animation-timing-function: ; animation-delay: ; animation-iteration-count: ; animation-direction: ; animation-play-state: ; animation-fill-mode: backwards; outline: none; transition: border-radius var(--wui-duration-lg) var(--wui-ease-out-power-1),
+      background-color var(--wui-duration-lg) var(--wui-ease-out-power-1); will-change: border-radius, background-color; }
+
+:host(.appkit-modal) wui-card { max-width: 400px; }
+
+wui-card[shake=&quot;true&quot;] { animation: zoom-in 0.2s var(--wui-ease-out-power-2),
+      w3m-shake 0.5s var(--wui-ease-out-power-2); }
+
+wui-flex { overflow: hidden auto; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+
+@media (max-height: 700px) and (min-width: 431px) {
+  wui-flex { align-items: flex-start; }
+  wui-card { margin: var(--wui-spacing-xxl) 0px; }
+}
+
+@media (max-width: 430px) {
+  wui-flex { align-items: flex-end; }
+  wui-card { max-width: 100%; border-bottom-left-radius: var(--local-border-bottom-mobile-radius); border-bottom-right-radius: var(--local-border-bottom-mobile-radius); border-bottom: medium; animation: slide-in 0.2s var(--wui-ease-out-power-2); }
+  wui-card[shake=&quot;true&quot;] { animation: slide-in 0.2s var(--wui-ease-out-power-2),
+        w3m-shake 0.5s var(--wui-ease-out-power-2); }
+}
+
+@keyframes zoom-in {
+  0% { transform: scale(0.95) translateY(0px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes slide-in {
+  0% { transform: scale(1) translateY(50px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes w3m-shake {
+  0% { transform: scale(1) rotate(0deg); }
+  20% { transform: scale(1) rotate(-1deg); }
+  40% { transform: scale(1) rotate(1.5deg); }
+  60% { transform: scale(1) rotate(-1.5deg); }
+  80% { transform: scale(1) rotate(1deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes w3m-view-height {
+  0% { height: var(--prev-height); }
+  100% { height: var(--new-height); }
+}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="a156efc7a2a1ebbe.css" data-precedence="next"><meta name="next-size-adjust" content=""><link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="https://app.usd.ai/favicon/apple-touch-icon.png"><style data-styled="active" data-styled-version="6.1.19">:root { --privy-border-radius-sm: 6px; --privy-border-radius-md: 12px; --privy-border-radius-mdlg: 16px; --privy-border-radius-lg: 24px; --privy-border-radius-full: 9999px; --privy-color-background: hsl(0, 0%, 100%); --privy-color-background-2: hsl(0, 0%, 96%); --privy-color-background-3: hsl(0, 0%, 92%); --privy-color-foreground: hsl(0, 0%, 12%); --privy-color-foreground-2: hsl(0, 0%, 30%); --privy-color-foreground-3: hsl(0, 0%, 57%); --privy-color-foreground-4: hsl(0, 0%, 92%); --privy-color-foreground-accent: hsl(0, 0%, 100%); --privy-color-accent: hsl(27, 35%, 69%); --privy-color-accent-light: hsl(27, 35%, 84%); --privy-color-accent-lightest: hsl(27, 35%, 94%); --privy-color-accent-dark: hsl(27, 35%, 63%); --privy-color-accent-darkest: hsl(27, 35%, 9%); --privy-color-success: hsl(147, 43%, 52%); --privy-color-success-dark: hsl(147, 43%, 36%); --privy-color-success-light: hsl(147, 43%, 92%); --privy-color-error: hsl(7, 80%, 62%); --privy-color-error-light: hsl(7, 80%, 92%); --privy-color-warn: hsl(36, 100%, 65%); --privy-color-warn-light: hsl(36, 100%, 95%); --privy-height-modal-full: 620px; --privy-height-modal-compact: 480px; }</style><style>
+      @import url("css2.css");
+      @keyframes w3m-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1) rotate(-1deg);
+        }
+        40% {
+          transform: scale(1) rotate(1.5deg);
+        }
+        60% {
+          transform: scale(1) rotate(-1.5deg);
+        }
+        80% {
+          transform: scale(1) rotate(1deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+      @keyframes w3m-iframe-fade-out {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes w3m-iframe-zoom-in {
+        0% {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes w3m-iframe-zoom-in-mobile {
+        0% {
+          transform: scale(0.95);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      :root {
+        --w3m-modal-width: 360px;
+        --w3m-color-mix-strength: 0%;
+        --w3m-font-family: Inter, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;;
+        --w3m-font-size-master: 10px;
+        --w3m-border-radius-master: 4px;
+        --w3m-z-index: 1000000;
+
+        --wui-font-family: var(--w3m-font-family);
+
+        --wui-font-size-mini: calc(var(--w3m-font-size-master) * 0.8);
+        --wui-font-size-micro: var(--w3m-font-size-master);
+        --wui-font-size-tiny: calc(var(--w3m-font-size-master) * 1.2);
+        --wui-font-size-small: calc(var(--w3m-font-size-master) * 1.4);
+        --wui-font-size-paragraph: calc(var(--w3m-font-size-master) * 1.6);
+        --wui-font-size-medium: calc(var(--w3m-font-size-master) * 1.8);
+        --wui-font-size-large: calc(var(--w3m-font-size-master) * 2);
+        --wui-font-size-title-6: calc(var(--w3m-font-size-master) * 2.2);
+        --wui-font-size-medium-title: calc(var(--w3m-font-size-master) * 2.4);
+        --wui-font-size-2xl: calc(var(--w3m-font-size-master) * 4);
+
+        --wui-border-radius-5xs: var(--w3m-border-radius-master);
+        --wui-border-radius-4xs: calc(var(--w3m-border-radius-master) * 1.5);
+        --wui-border-radius-3xs: calc(var(--w3m-border-radius-master) * 2);
+        --wui-border-radius-xxs: calc(var(--w3m-border-radius-master) * 3);
+        --wui-border-radius-xs: calc(var(--w3m-border-radius-master) * 4);
+        --wui-border-radius-s: calc(var(--w3m-border-radius-master) * 5);
+        --wui-border-radius-m: calc(var(--w3m-border-radius-master) * 7);
+        --wui-border-radius-l: calc(var(--w3m-border-radius-master) * 9);
+        --wui-border-radius-3xl: calc(var(--w3m-border-radius-master) * 20);
+
+        --wui-font-weight-light: 400;
+        --wui-font-weight-regular: 500;
+        --wui-font-weight-medium: 600;
+        --wui-font-weight-bold: 700;
+
+        --wui-letter-spacing-2xl: -1.6px;
+        --wui-letter-spacing-medium-title: -0.96px;
+        --wui-letter-spacing-title-6: -0.88px;
+        --wui-letter-spacing-large: -0.8px;
+        --wui-letter-spacing-medium: -0.72px;
+        --wui-letter-spacing-paragraph: -0.64px;
+        --wui-letter-spacing-small: -0.56px;
+        --wui-letter-spacing-tiny: -0.48px;
+        --wui-letter-spacing-micro: -0.2px;
+        --wui-letter-spacing-mini: -0.16px;
+
+        --wui-spacing-0: 0px;
+        --wui-spacing-4xs: 2px;
+        --wui-spacing-3xs: 4px;
+        --wui-spacing-xxs: 6px;
+        --wui-spacing-2xs: 7px;
+        --wui-spacing-xs: 8px;
+        --wui-spacing-1xs: 10px;
+        --wui-spacing-s: 12px;
+        --wui-spacing-m: 14px;
+        --wui-spacing-l: 16px;
+        --wui-spacing-2l: 18px;
+        --wui-spacing-xl: 20px;
+        --wui-spacing-xxl: 24px;
+        --wui-spacing-2xl: 32px;
+        --wui-spacing-3xl: 40px;
+        --wui-spacing-4xl: 90px;
+        --wui-spacing-5xl: 95px;
+
+        --wui-icon-box-size-xxs: 14px;
+        --wui-icon-box-size-xs: 20px;
+        --wui-icon-box-size-sm: 24px;
+        --wui-icon-box-size-md: 32px;
+        --wui-icon-box-size-mdl: 36px;
+        --wui-icon-box-size-lg: 40px;
+        --wui-icon-box-size-2lg: 48px;
+        --wui-icon-box-size-xl: 64px;
+
+        --wui-icon-size-inherit: inherit;
+        --wui-icon-size-xxs: 10px;
+        --wui-icon-size-xs: 12px;
+        --wui-icon-size-sm: 14px;
+        --wui-icon-size-md: 16px;
+        --wui-icon-size-mdl: 18px;
+        --wui-icon-size-lg: 20px;
+        --wui-icon-size-xl: 24px;
+        --wui-icon-size-xxl: 28px;
+
+        --wui-wallet-image-size-inherit: inherit;
+        --wui-wallet-image-size-sm: 40px;
+        --wui-wallet-image-size-md: 56px;
+        --wui-wallet-image-size-lg: 80px;
+
+        --wui-visual-size-size-inherit: inherit;
+        --wui-visual-size-sm: 40px;
+        --wui-visual-size-md: 55px;
+        --wui-visual-size-lg: 80px;
+
+        --wui-box-size-md: 100px;
+        --wui-box-size-lg: 120px;
+
+        --wui-ease-out-power-2: cubic-bezier(0, 0, 0.22, 1);
+        --wui-ease-out-power-1: cubic-bezier(0, 0, 0.55, 1);
+
+        --wui-ease-in-power-3: cubic-bezier(0.66, 0, 1, 1);
+        --wui-ease-in-power-2: cubic-bezier(0.45, 0, 1, 1);
+        --wui-ease-in-power-1: cubic-bezier(0.3, 0, 1, 1);
+
+        --wui-ease-inout-power-1: cubic-bezier(0.45, 0, 0.55, 1);
+
+        --wui-duration-lg: 200ms;
+        --wui-duration-md: 125ms;
+        --wui-duration-sm: 75ms;
+
+        --wui-path-network-sm: path(
+          'M15.4 2.1a5.21 5.21 0 0 1 5.2 0l11.61 6.7a5.21 5.21 0 0 1 2.61 4.52v13.4c0 1.87-1 3.59-2.6 4.52l-11.61 6.7c-1.62.93-3.6.93-5.22 0l-11.6-6.7a5.21 5.21 0 0 1-2.61-4.51v-13.4c0-1.87 1-3.6 2.6-4.52L15.4 2.1Z'
+        );
+
+        --wui-path-network-md: path(
+          'M43.4605 10.7248L28.0485 1.61089C25.5438 0.129705 22.4562 0.129705 19.9515 1.61088L4.53951 10.7248C2.03626 12.2051 0.5 14.9365 0.5 17.886V36.1139C0.5 39.0635 2.03626 41.7949 4.53951 43.2752L19.9515 52.3891C22.4562 53.8703 25.5438 53.8703 28.0485 52.3891L43.4605 43.2752C45.9637 41.7949 47.5 39.0635 47.5 36.114V17.8861C47.5 14.9365 45.9637 12.2051 43.4605 10.7248Z'
+        );
+
+        --wui-path-network-lg: path(
+          'M78.3244 18.926L50.1808 2.45078C45.7376 -0.150261 40.2624 -0.150262 35.8192 2.45078L7.6756 18.926C3.23322 21.5266 0.5 26.3301 0.5 31.5248V64.4752C0.5 69.6699 3.23322 74.4734 7.6756 77.074L35.8192 93.5492C40.2624 96.1503 45.7376 96.1503 50.1808 93.5492L78.3244 77.074C82.7668 74.4734 85.5 69.6699 85.5 64.4752V31.5248C85.5 26.3301 82.7668 21.5266 78.3244 18.926Z'
+        );
+
+        --wui-width-network-sm: 36px;
+        --wui-width-network-md: 48px;
+        --wui-width-network-lg: 86px;
+
+        --wui-height-network-sm: 40px;
+        --wui-height-network-md: 54px;
+        --wui-height-network-lg: 96px;
+
+        --wui-icon-size-network-xs: 12px;
+        --wui-icon-size-network-sm: 16px;
+        --wui-icon-size-network-md: 24px;
+        --wui-icon-size-network-lg: 42px;
+
+        --wui-color-inherit: inherit;
+
+        --wui-color-inverse-100: #fff;
+        --wui-color-inverse-000: #000;
+
+        --wui-cover: rgba(20, 20, 20, 0.8);
+
+        --wui-color-modal-bg: var(--wui-color-modal-bg-base);
+
+        --wui-color-accent-100: var(--wui-color-accent-base-100);
+        --wui-color-accent-090: var(--wui-color-accent-base-090);
+        --wui-color-accent-080: var(--wui-color-accent-base-080);
+
+        --wui-color-success-100: var(--wui-color-success-base-100);
+        --wui-color-success-125: var(--wui-color-success-base-125);
+
+        --wui-color-warning-100: var(--wui-color-warning-base-100);
+
+        --wui-color-error-100: var(--wui-color-error-base-100);
+        --wui-color-error-125: var(--wui-color-error-base-125);
+
+        --wui-color-blue-100: var(--wui-color-blue-base-100);
+        --wui-color-blue-90: var(--wui-color-blue-base-90);
+
+        --wui-icon-box-bg-error-100: var(--wui-icon-box-bg-error-base-100);
+        --wui-icon-box-bg-blue-100: var(--wui-icon-box-bg-blue-base-100);
+        --wui-icon-box-bg-success-100: var(--wui-icon-box-bg-success-base-100);
+        --wui-icon-box-bg-inverse-100: var(--wui-icon-box-bg-inverse-base-100);
+
+        --wui-all-wallets-bg-100: var(--wui-all-wallets-bg-100);
+
+        --wui-avatar-border: var(--wui-avatar-border-base);
+
+        --wui-thumbnail-border: var(--wui-thumbnail-border-base);
+
+        --wui-wallet-button-bg: var(--wui-wallet-button-bg-base);
+
+        --wui-box-shadow-blue: var(--wui-color-accent-glass-020);
+      }
+
+      @supports (background: color-mix(in srgb, white 50%, black)) {
+        :root {
+          --wui-color-modal-bg: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-modal-bg-base)
+          );
+
+          --wui-box-shadow-blue: color-mix(in srgb, var(--wui-color-accent-100) 20%, transparent);
+
+          --wui-color-accent-100: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 100%,
+            transparent
+          );
+          --wui-color-accent-090: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 90%,
+            transparent
+          );
+          --wui-color-accent-080: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 80%,
+            transparent
+          );
+          --wui-color-accent-glass-090: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 90%,
+            transparent
+          );
+          --wui-color-accent-glass-080: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 80%,
+            transparent
+          );
+          --wui-color-accent-glass-020: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 20%,
+            transparent
+          );
+          --wui-color-accent-glass-015: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 15%,
+            transparent
+          );
+          --wui-color-accent-glass-010: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 10%,
+            transparent
+          );
+          --wui-color-accent-glass-005: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 5%,
+            transparent
+          );
+          --wui-color-accent-002: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 2%,
+            transparent
+          );
+
+          --wui-color-fg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-100)
+          );
+          --wui-color-fg-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-125)
+          );
+          --wui-color-fg-150: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-150)
+          );
+          --wui-color-fg-175: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-175)
+          );
+          --wui-color-fg-200: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-200)
+          );
+          --wui-color-fg-225: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-225)
+          );
+          --wui-color-fg-250: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-250)
+          );
+          --wui-color-fg-275: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-275)
+          );
+          --wui-color-fg-300: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-300)
+          );
+          --wui-color-fg-325: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-325)
+          );
+          --wui-color-fg-350: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-350)
+          );
+
+          --wui-color-bg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-100)
+          );
+          --wui-color-bg-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-125)
+          );
+          --wui-color-bg-150: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-150)
+          );
+          --wui-color-bg-175: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-175)
+          );
+          --wui-color-bg-200: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-200)
+          );
+          --wui-color-bg-225: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-225)
+          );
+          --wui-color-bg-250: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-250)
+          );
+          --wui-color-bg-275: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-275)
+          );
+          --wui-color-bg-300: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-300)
+          );
+          --wui-color-bg-325: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-325)
+          );
+          --wui-color-bg-350: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-350)
+          );
+
+          --wui-color-success-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-success-base-100)
+          );
+          --wui-color-success-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-success-base-125)
+          );
+
+          --wui-color-warning-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-warning-base-100)
+          );
+
+          --wui-color-error-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-error-base-100)
+          );
+          --wui-color-blue-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-blue-base-100)
+          );
+          --wui-color-blue-90: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-blue-base-90)
+          );
+          --wui-color-error-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-error-base-125)
+          );
+
+          --wui-icon-box-bg-error-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-error-base-100)
+          );
+          --wui-icon-box-bg-accent-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-blue-base-100)
+          );
+          --wui-icon-box-bg-success-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-success-base-100)
+          );
+          --wui-icon-box-bg-inverse-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-inverse-base-100)
+          );
+
+          --wui-all-wallets-bg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-all-wallets-bg-100)
+          );
+
+          --wui-avatar-border: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-avatar-border-base)
+          );
+
+          --wui-thumbnail-border: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-thumbnail-border-base)
+          );
+
+          --wui-wallet-button-bg: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-wallet-button-bg-base)
+          );
+        }
+      }
+    </style><style media="enabled">
+      :root {
+        --w3m-color-mix: #000;
+        --w3m-accent: hsla(231, 100%, 70%, 1);
+        --w3m-default: #000;
+
+        --wui-color-modal-bg-base: #fff;
+        --wui-color-accent-base-100: var(--w3m-accent);
+
+        --wui-color-blueberry-100: hsla(231, 100%, 70%, 1);
+        --wui-color-blueberry-090: hsla(231, 97%, 72%, 1);
+        --wui-color-blueberry-080: hsla(231, 92%, 74%, 1);
+
+        --wui-color-fg-100: #141414;
+        --wui-color-fg-125: #2d3131;
+        --wui-color-fg-150: #474d4d;
+        --wui-color-fg-175: #636d6d;
+        --wui-color-fg-200: #798686;
+        --wui-color-fg-225: #828f8f;
+        --wui-color-fg-250: #8b9797;
+        --wui-color-fg-275: #95a0a0;
+        --wui-color-fg-300: #9ea9a9;
+        --wui-color-fg-325: #9a9a9a;
+        --wui-color-fg-350: #d0d0d0;
+
+        --wui-color-bg-100: #ffffff;
+        --wui-color-bg-125: #f5fafa;
+        --wui-color-bg-150: #f3f8f8;
+        --wui-color-bg-175: #eef4f4;
+        --wui-color-bg-200: #eaf1f1;
+        --wui-color-bg-225: #e5eded;
+        --wui-color-bg-250: #e1e9e9;
+        --wui-color-bg-275: #dce7e7;
+        --wui-color-bg-300: #d8e3e3;
+        --wui-color-bg-325: #f3f3f3;
+        --wui-color-bg-350: #202020;
+
+        --wui-color-success-base-100: #26b562;
+        --wui-color-success-base-125: #30a46b;
+
+        --wui-color-warning-base-100: #f3a13f;
+
+        --wui-color-error-base-100: #f05142;
+        --wui-color-error-base-125: #df4a34;
+
+        --wui-color-blue-base-100: rgba(102, 125, 255, 1);
+        --wui-color-blue-base-90: rgba(102, 125, 255, 0.9);
+
+        --wui-color-success-glass-001: rgba(38, 181, 98, 0.01);
+        --wui-color-success-glass-002: rgba(38, 181, 98, 0.02);
+        --wui-color-success-glass-005: rgba(38, 181, 98, 0.05);
+        --wui-color-success-glass-010: rgba(38, 181, 98, 0.1);
+        --wui-color-success-glass-015: rgba(38, 181, 98, 0.15);
+        --wui-color-success-glass-020: rgba(38, 181, 98, 0.2);
+        --wui-color-success-glass-025: rgba(38, 181, 98, 0.25);
+        --wui-color-success-glass-030: rgba(38, 181, 98, 0.3);
+        --wui-color-success-glass-060: rgba(38, 181, 98, 0.6);
+        --wui-color-success-glass-080: rgba(38, 181, 98, 0.8);
+
+        --wui-color-success-glass-reown-020: rgba(48, 164, 107, 0.2);
+
+        --wui-color-warning-glass-reown-020: rgba(243, 161, 63, 0.2);
+
+        --wui-color-error-glass-001: rgba(240, 81, 66, 0.01);
+        --wui-color-error-glass-002: rgba(240, 81, 66, 0.02);
+        --wui-color-error-glass-005: rgba(240, 81, 66, 0.05);
+        --wui-color-error-glass-010: rgba(240, 81, 66, 0.1);
+        --wui-color-error-glass-015: rgba(240, 81, 66, 0.15);
+        --wui-color-error-glass-020: rgba(240, 81, 66, 0.2);
+        --wui-color-error-glass-025: rgba(240, 81, 66, 0.25);
+        --wui-color-error-glass-030: rgba(240, 81, 66, 0.3);
+        --wui-color-error-glass-060: rgba(240, 81, 66, 0.6);
+        --wui-color-error-glass-080: rgba(240, 81, 66, 0.8);
+
+        --wui-color-error-glass-reown-020: rgba(223, 74, 52, 0.2);
+
+        --wui-icon-box-bg-error-base-100: #f4dfdd;
+        --wui-icon-box-bg-blue-base-100: #d9ecfb;
+        --wui-icon-box-bg-success-base-100: #daf0e4;
+        --wui-icon-box-bg-inverse-base-100: #dcecfc;
+
+        --wui-all-wallets-bg-100: #e8f1fa;
+
+        --wui-avatar-border-base: #f3f4f4;
+
+        --wui-thumbnail-border-base: #eaefef;
+
+        --wui-wallet-button-bg-base: var(--wui-color-bg-125);
+
+        --wui-color-gray-glass-001: rgba(0, 0, 0, 0.01);
+        --wui-color-gray-glass-002: rgba(0, 0, 0, 0.02);
+        --wui-color-gray-glass-005: rgba(0, 0, 0, 0.05);
+        --wui-color-gray-glass-010: rgba(0, 0, 0, 0.1);
+        --wui-color-gray-glass-015: rgba(0, 0, 0, 0.15);
+        --wui-color-gray-glass-020: rgba(0, 0, 0, 0.2);
+        --wui-color-gray-glass-025: rgba(0, 0, 0, 0.25);
+        --wui-color-gray-glass-030: rgba(0, 0, 0, 0.3);
+        --wui-color-gray-glass-060: rgba(0, 0, 0, 0.6);
+        --wui-color-gray-glass-080: rgba(0, 0, 0, 0.8);
+        --wui-color-gray-glass-090: rgba(0, 0, 0, 0.9);
+
+        --wui-color-dark-glass-100: rgba(233, 233, 233, 1);
+
+        --w3m-card-embedded-shadow-color: rgb(224 225 233 / 25%);
+      }
+    </style><style>
+      :root {
+        --w3m-color-mix: #fff;
+        --w3m-accent: hsla(230, 100%, 67%, 1);
+        --w3m-default: #fff;
+
+        --wui-color-modal-bg-base: #121313;
+        --wui-color-accent-base-100: var(--w3m-accent);
+
+        --wui-color-blueberry-100: hsla(230, 100%, 67%, 1);
+        --wui-color-blueberry-090: hsla(231, 76%, 61%, 1);
+        --wui-color-blueberry-080: hsla(230, 59%, 55%, 1);
+        --wui-color-blueberry-050: hsla(231, 100%, 70%, 0.1);
+
+        --wui-color-fg-100: #e4e7e7;
+        --wui-color-fg-125: #d0d5d5;
+        --wui-color-fg-150: #a8b1b1;
+        --wui-color-fg-175: #a8b0b0;
+        --wui-color-fg-200: #949e9e;
+        --wui-color-fg-225: #868f8f;
+        --wui-color-fg-250: #788080;
+        --wui-color-fg-275: #788181;
+        --wui-color-fg-300: #6e7777;
+        --wui-color-fg-325: #9a9a9a;
+        --wui-color-fg-350: #363636;
+
+        --wui-color-bg-100: #141414;
+        --wui-color-bg-125: #191a1a;
+        --wui-color-bg-150: #1e1f1f;
+        --wui-color-bg-175: #222525;
+        --wui-color-bg-200: #272a2a;
+        --wui-color-bg-225: #2c3030;
+        --wui-color-bg-250: #313535;
+        --wui-color-bg-275: #363b3b;
+        --wui-color-bg-300: #3b4040;
+        --wui-color-bg-325: #252525;
+        --wui-color-bg-350: #ffffff;
+
+        --wui-color-success-base-100: #26d962;
+        --wui-color-success-base-125: #30a46b;
+
+        --wui-color-warning-base-100: #f3a13f;
+
+        --wui-color-error-base-100: #f25a67;
+        --wui-color-error-base-125: #df4a34;
+
+        --wui-color-blue-base-100: rgba(102, 125, 255, 1);
+        --wui-color-blue-base-90: rgba(102, 125, 255, 0.9);
+
+        --wui-color-success-glass-001: rgba(38, 217, 98, 0.01);
+        --wui-color-success-glass-002: rgba(38, 217, 98, 0.02);
+        --wui-color-success-glass-005: rgba(38, 217, 98, 0.05);
+        --wui-color-success-glass-010: rgba(38, 217, 98, 0.1);
+        --wui-color-success-glass-015: rgba(38, 217, 98, 0.15);
+        --wui-color-success-glass-020: rgba(38, 217, 98, 0.2);
+        --wui-color-success-glass-025: rgba(38, 217, 98, 0.25);
+        --wui-color-success-glass-030: rgba(38, 217, 98, 0.3);
+        --wui-color-success-glass-060: rgba(38, 217, 98, 0.6);
+        --wui-color-success-glass-080: rgba(38, 217, 98, 0.8);
+
+        --wui-color-success-glass-reown-020: rgba(48, 164, 107, 0.2);
+
+        --wui-color-warning-glass-reown-020: rgba(243, 161, 63, 0.2);
+
+        --wui-color-error-glass-001: rgba(242, 90, 103, 0.01);
+        --wui-color-error-glass-002: rgba(242, 90, 103, 0.02);
+        --wui-color-error-glass-005: rgba(242, 90, 103, 0.05);
+        --wui-color-error-glass-010: rgba(242, 90, 103, 0.1);
+        --wui-color-error-glass-015: rgba(242, 90, 103, 0.15);
+        --wui-color-error-glass-020: rgba(242, 90, 103, 0.2);
+        --wui-color-error-glass-025: rgba(242, 90, 103, 0.25);
+        --wui-color-error-glass-030: rgba(242, 90, 103, 0.3);
+        --wui-color-error-glass-060: rgba(242, 90, 103, 0.6);
+        --wui-color-error-glass-080: rgba(242, 90, 103, 0.8);
+
+        --wui-color-error-glass-reown-020: rgba(223, 74, 52, 0.2);
+
+        --wui-color-gray-glass-001: rgba(255, 255, 255, 0.01);
+        --wui-color-gray-glass-002: rgba(255, 255, 255, 0.02);
+        --wui-color-gray-glass-005: rgba(255, 255, 255, 0.05);
+        --wui-color-gray-glass-010: rgba(255, 255, 255, 0.1);
+        --wui-color-gray-glass-015: rgba(255, 255, 255, 0.15);
+        --wui-color-gray-glass-020: rgba(255, 255, 255, 0.2);
+        --wui-color-gray-glass-025: rgba(255, 255, 255, 0.25);
+        --wui-color-gray-glass-030: rgba(255, 255, 255, 0.3);
+        --wui-color-gray-glass-060: rgba(255, 255, 255, 0.6);
+        --wui-color-gray-glass-080: rgba(255, 255, 255, 0.8);
+        --wui-color-gray-glass-090: rgba(255, 255, 255, 0.9);
+
+        --wui-color-dark-glass-100: rgba(42, 42, 42, 1);
+
+        --wui-icon-box-bg-error-base-100: #3c2426;
+        --wui-icon-box-bg-blue-base-100: #20303f;
+        --wui-icon-box-bg-success-base-100: #1f3a28;
+        --wui-icon-box-bg-inverse-base-100: #243240;
+
+        --wui-all-wallets-bg-100: #222b35;
+
+        --wui-avatar-border-base: #252525;
+
+        --wui-thumbnail-border-base: #252525;
+
+        --wui-wallet-button-bg-base: var(--wui-color-bg-125);
+
+        --w3m-card-embedded-shadow-color: rgb(17 17 18 / 25%);
+      }
+    </style><script data-scrapbook-elem="custom-elements-loader">(function (names) { if (!customElements) { return; } for (const name of names) { customElements.define(name, class CustomElement extends HTMLElement {}); } })(["next-route-announcer","w3m-modal"])</script></head><body class="min-h-screen w-full touch-manipulation bg-bg-page text-sm text-text-primary" style="overflow: unset;"><div hidden=""><!--$--><!--/$--></div><img src="usdai-full-horizontal-lockup.svg" style="display:none"><!--$--><div class="flex h-screen flex-col overflow-hidden"><div class="flex w-full flex-col fixed inset-x-0 top-0 z-50 bg-bg-page"><div class="relative flex h-[60px] items-center border-b border-outline-major px-4 md:px-8"><div class="flex flex-row items-center gap-4"><button class="relative z-40 md:hidden" type="button"><svg height="12" overflow="visible" preserveAspectRatio="none" viewBox="0 0 8 4" width="24"><line x1="0" x2="8" y1="0" y2="0" stroke="currentColor" fill="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" style="transform:none;transform-origin:50% 50%;transform-box:fill-box"></line><line x1="0" x2="8" y1="2" y2="2" stroke="currentColor" fill="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" opacity="1"></line><line x1="0" x2="8" y1="4" y2="4" stroke="currentColor" fill="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" style="transform:none;transform-origin:50% 50%;transform-box:fill-box"></line></svg></button><a aria-label="usd.ai Homepage" href="https://app.usd.ai/"><svg fill="none" viewBox="0 0 776 195" xmlns="http://www.w3.org/2000/svg" class="flex h-7 items-center"><path d="M325.669 155.407C300.875 155.407 283.123 141.029 283.123 120.783V53.8835L273 44.4941H316.279L306.303 53.8835L306.597 116.822C306.597 132.373 318.627 142.936 335.352 142.936C351.637 142.936 363.08 132.667 363.08 117.409V53.8835L347.822 44.4941H382.152L367.041 53.8835V119.169C367.041 140.296 349.876 155.407 325.669 155.407Z" fill="#2F2823"></path><path d="M424.061 155.407C411.884 155.407 396.773 153.206 387.237 149.979V147.338L382.395 111.834C393.105 136.921 408.656 152.326 426.555 152.326C437.998 152.326 445.921 145.137 445.921 134.427C445.921 104.058 384.302 113.888 384.302 75.1565C384.302 56.0842 401.174 42 423.914 42C434.477 42 445.774 44.3474 455.163 49.0421V51.6829L459.711 81.6117C447.975 58.4315 434.771 45.2276 420.1 45.2276C408.363 45.2276 400.147 52.7098 400.147 63.2729C400.147 90.8544 461.912 82.0518 461.912 121.957C461.912 141.323 446.948 155.407 424.061 155.407Z" fill="#2F2823"></path><path d="M513.377 153.646H467.164L477.287 144.404V53.8835L467.164 44.4941H513.377C550.202 44.4941 577.636 67.9677 577.636 98.1899C577.636 129.439 550.202 153.646 513.377 153.646ZM500.467 47.575V150.565H511.91C535.824 150.565 552.549 128.852 552.549 98.1899C552.549 68.4078 535.824 47.575 512.057 47.575H500.467Z" fill="#2F2823"></path><path d="M602.018 154.82H578.984V131.053H602.018V154.82Z" fill="#A99482"></path><path d="M643.326 153.646H608.409L622.493 144.697L657.263 59.6052L649.634 47.7217L676.482 42.8803L719.615 144.99L730.472 153.646H678.389L693.501 145.137L680.884 115.208H638.631L626.748 144.697L643.326 153.646ZM658.584 65.1802L639.951 111.981H679.563L660.051 65.1802H658.584Z" fill="#A99482"></path><path d="M731.786 153.646L741.909 144.99V53.15L731.786 44.4941H775.066L765.089 53.15V144.99L775.066 153.646H731.786Z" fill="#A99482"></path><path d="M27.4626 165.331C-9.99924 126.65 -9.01124 64.9244 29.6694 27.4626C68.3499 -9.99924 130.076 -9.01124 167.537 29.6694C204.999 68.3499 204.011 130.076 165.331 167.537C126.65 204.999 64.9244 204.011 27.4626 165.331Z" fill="url(#paint0_linear_5080_20411)"></path><path d="M36.0826 156.982C3.23144 123.062 4.09784 68.9337 38.0177 36.0826C71.9376 3.23144 126.066 4.09784 158.917 38.0177C191.769 71.9376 190.902 126.066 156.982 158.917C123.062 191.769 68.9337 190.902 36.0826 156.982Z" fill="#141414"></path><path d="M82.9653 132.025L95.2007 147.986L97.7075 146.54L97.7114 146.542V122.998L82.9653 132.025ZM64.188 107.524L78.9312 126.762V126.76L97.7114 115.262V86.999L64.188 107.524ZM64.188 71.5283L45.4106 83.0264L60.1538 102.264V102.262L97.7114 79.2646V51.0029L64.188 71.5283Z" fill="url(#paint1_linear_5080_20411)"></path><path d="M97.6982 146.557L97.7275 146.54L100.218 147.977L112.444 132.025L97.6982 122.998V146.557ZM97.6982 115.262L116.479 126.76V126.762L131.222 107.524L97.6982 86.999V115.262ZM97.6982 79.2646L135.256 102.262V102.264L150 83.0264L131.222 71.5283L97.6982 51.0029V79.2646Z" fill="url(#paint2_linear_5080_20411)"></path><defs><linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_5080_20411" x1="62.7341" x2="87.5946" y1="5.82669" y2="195"><stop stop-color="#C4AE9C"></stop><stop offset="0.586538" stop-color="#A99482"></stop><stop offset="1" stop-color="#7D6B5B"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="paint1_linear_5080_20411" x1="93.9768" x2="71.3506" y1="147.679" y2="69.1039"><stop stop-color="#EBCAAE"></stop><stop offset="1" stop-color="#FFF1E5"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="paint2_linear_5080_20411" x1="97.6822" x2="128.535" y1="147.678" y2="67.8689"><stop offset="0.0673077" stop-color="#473321"></stop><stop offset="1" stop-color="#A99482"></stop></linearGradient></defs></svg></a><div class="flex flex-col md:ml-2 md:flex-row max-md:hidden"><div class="hidden sm:inline-flex group hidden sm:block" role="button" tabindex="0" data-state="closed"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r"><span class="text-secondary"><span class="flex items-center gap-1">TVL <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-3"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"></path></svg></span></span><span class="text-primary">$582.5M</span></div></div><div class="inline-flex cursor-pointer sm:hidden" role="button" tabindex="0"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r"><span class="text-secondary"><span class="flex items-center gap-1">TVL <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-3"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"></path></svg></span></span><span class="text-primary">$582.5M</span></div></div><div class="hidden sm:inline-flex group hidden sm:block" role="button" tabindex="0" data-state="closed"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r"><span class="text-secondary">APY</span><span class="text-primary">11.37%</span></div></div><div class="inline-flex cursor-pointer sm:hidden" role="button" tabindex="0"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r"><span class="text-secondary">APY</span><span class="text-primary">11.37%</span></div></div><div class="hidden sm:inline-flex group hidden sm:block" role="button" tabindex="0" data-state="closed"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r md:!w-20 md:min-w-20"><span class="text-secondary">EXP. APY</span><span class="text-primary">13.75%</span></div></div><div class="inline-flex cursor-pointer sm:hidden" role="button" tabindex="0"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r md:!w-20 md:min-w-20"><span class="text-secondary">EXP. APY</span><span class="text-primary">13.75%</span></div></div><div class="hidden sm:inline-flex group hidden sm:block" role="button" tabindex="0" data-state="closed"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r md:!w-20 md:min-w-20"><span class="text-secondary"><span class="flex items-center gap-1">FAIR VALUE <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-3"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"></path></svg></span></span><span class="text-primary"><div class="flex gap-2"><div class="flex items-center gap-1"><div class="relative shrink-0 size-4"><img alt="" draggable="false" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="size-full" style="color:transparent" src="usdai.svg"></div><span class="text-secondary">$1.000</span></div><div class="flex items-center gap-1"><div class="relative shrink-0 size-4"><img alt="" draggable="false" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="size-full" style="color:transparent" src="susdai.svg"></div><span class="text-secondary">$1.051</span></div></div></span></div></div><div class="inline-flex cursor-pointer sm:hidden" role="button" tabindex="0"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r md:!w-20 md:min-w-20"><span class="text-secondary"><span class="flex items-center gap-1">FAIR VALUE <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-3"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"></path></svg></span></span><span class="text-primary"><div class="flex gap-2"><div class="flex items-center gap-1"><div class="relative shrink-0 size-4"><img alt="" draggable="false" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="size-full" style="color:transparent" src="usdai.svg"></div><span class="text-secondary">$1.000</span></div><div class="flex items-center gap-1"><div class="relative shrink-0 size-4"><img alt="" draggable="false" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="size-full" style="color:transparent" src="susdai.svg"></div><span class="text-secondary">$1.051</span></div></div></span></div></div></div></div><div class="grow"></div><div class="ml-4 flex h-7.5 flex-row items-center gap-1 lg:gap-2"><div class="flex flex-row gap-2 lg:gap-4"><a class="flex h-[30px] flex-row items-center border border-outline-minor" href="https://app.usd.ai/rewards"><div class="flex h-full w-[30px] items-center justify-center bg-primary"><svg fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg" class="w-5 *:fill-bg-page"><path d="M8.74087 10.4358C10.6567 10.4358 12.2098 8.88276 12.2098 6.96694C12.2098 5.05112 10.6567 3.49805 8.74087 3.49805C6.82505 3.49805 5.27197 5.05112 5.27197 6.96694C5.27197 8.88276 6.82505 10.4358 8.74087 10.4358Z" fill="currentColor"></path><path d="M15.4779 2.00267C14.6528 1.95215 13.9624 2.62572 13.9624 3.43401V4.30965C14.0129 7.39124 13.3393 9.61403 12.0259 10.7086C11.8575 10.8433 11.6891 10.978 11.5038 11.1127C10.7124 11.6516 9.75256 11.9547 8.72536 11.9547C7.52977 11.9547 6.41838 11.5337 5.55957 10.8265C4.14507 11.5 3 12.7125 3 14.7332V17.2759C3 17.6801 3.31995 18 3.72409 18H13.7603C14.1645 18 14.4844 17.6801 14.4844 17.2759V14.7332C14.4844 14.5985 14.4844 14.4806 14.4676 14.3627C14.4002 13.3355 14.6191 12.3083 15.1917 11.4664C16.3367 9.74875 16.8924 7.34073 16.8419 4.30965V3.53505C16.8419 2.7436 16.2525 2.05319 15.4779 2.00267Z" fill="currentColor"></path></svg></div><div class="hidden h-full items-center pr-4 pl-3 lg:flex"><span class="text-sm">Allo™</span></div></a></div>
+	
+	<button type="button" class="connect-wallet btn btn-normal outline-hidden disabled:cursor-not-allowed inline-flex h-full btn-secondary cursor-pointer items-center gap-1 px-5 py-[6px] text-sm font-medium whitespace-nowrap lg:px-6">Connect</button>
+	
+	</div><div class="fixed inset-0 top-[56px] h-[calc(100dvh-56px)] bg-bg-page/50 -z-50 hidden" style="opacity:0"></div><div class="no-scroll fixed top-[60px] left-0 z-88 flex flex-col pt-3 h-[calc(100dvh-60px)] w-[80%] max-w-[250px] overflow-y-auto bg-bg-page md:hidden" style="transform:translateX(-100%)"><div class="flex flex-col md:ml-2 md:flex-row"><div class="hidden sm:inline-flex group hidden sm:block" role="button" tabindex="0" data-state="closed"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r"><span class="text-secondary"><span class="flex items-center gap-1">TVL <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-3"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"></path></svg></span></span><span class="text-primary">$582.5M</span></div></div><div class="inline-flex cursor-pointer sm:hidden" role="button" tabindex="0"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r"><span class="text-secondary"><span class="flex items-center gap-1">TVL <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-3"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"></path></svg></span></span><span class="text-primary">$582.5M</span></div></div><div class="hidden sm:inline-flex group hidden sm:block" role="button" tabindex="0" data-state="closed"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r"><span class="text-secondary">APY</span><span class="text-primary">11.37%</span></div></div><div class="inline-flex cursor-pointer sm:hidden" role="button" tabindex="0"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r"><span class="text-secondary">APY</span><span class="text-primary">11.37%</span></div></div><div class="hidden sm:inline-flex group hidden sm:block" role="button" tabindex="0" data-state="closed"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r md:!w-20 md:min-w-20"><span class="text-secondary">EXP. APY</span><span class="text-primary">13.75%</span></div></div><div class="inline-flex cursor-pointer sm:hidden" role="button" tabindex="0"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r md:!w-20 md:min-w-20"><span class="text-secondary">EXP. APY</span><span class="text-primary">13.75%</span></div></div><div class="hidden sm:inline-flex group hidden sm:block" role="button" tabindex="0" data-state="closed"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r md:!w-20 md:min-w-20"><span class="text-secondary"><span class="flex items-center gap-1">FAIR VALUE <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-3"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"></path></svg></span></span><span class="text-primary"><div class="flex gap-2"><div class="flex items-center gap-1"><div class="relative shrink-0 size-4"><img alt="" draggable="false" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="size-full" style="color:transparent" src="usdai.svg"></div><span class="text-secondary">$1.000</span></div><div class="flex items-center gap-1"><div class="relative shrink-0 size-4"><img alt="" draggable="false" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="size-full" style="color:transparent" src="susdai.svg"></div><span class="text-secondary">$1.051</span></div></div></span></div></div><div class="inline-flex cursor-pointer sm:hidden" role="button" tabindex="0"><div class="flex w-full min-w-16 flex-row items-center justify-between gap-1 border-outline-minor px-3.5 py-1 text-xs whitespace-nowrap md:flex-col md:items-start md:border-l md:group-last:border-r md:!w-20 md:min-w-20"><span class="text-secondary"><span class="flex items-center gap-1">FAIR VALUE <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-3"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"></path></svg></span></span><span class="text-primary"><div class="flex gap-2"><div class="flex items-center gap-1"><div class="relative shrink-0 size-4"><img alt="" draggable="false" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="size-full" style="color:transparent" src="usdai.svg"></div><span class="text-secondary">$1.000</span></div><div class="flex items-center gap-1"><div class="relative shrink-0 size-4"><img alt="" draggable="false" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="size-full" style="color:transparent" src="susdai.svg"></div><span class="text-secondary">$1.051</span></div></div></span></div></div></div><hr class="mx-3 my-2 border-outline-major"><!--$--><div class="flex h-full flex-col"><div class="flex flex-col"><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg" class="size-5 stroke-2"><path d="M8.74087 10.4358C10.6567 10.4358 12.2098 8.88276 12.2098 6.96694C12.2098 5.05112 10.6567 3.49805 8.74087 3.49805C6.82505 3.49805 5.27197 5.05112 5.27197 6.96694C5.27197 8.88276 6.82505 10.4358 8.74087 10.4358Z" fill="currentColor"></path><path d="M15.4779 2.00267C14.6528 1.95215 13.9624 2.62572 13.9624 3.43401V4.30965C14.0129 7.39124 13.3393 9.61403 12.0259 10.7086C11.8575 10.8433 11.6891 10.978 11.5038 11.1127C10.7124 11.6516 9.75256 11.9547 8.72536 11.9547C7.52977 11.9547 6.41838 11.5337 5.55957 10.8265C4.14507 11.5 3 12.7125 3 14.7332V17.2759C3 17.6801 3.31995 18 3.72409 18H13.7603C14.1645 18 14.4844 17.6801 14.4844 17.2759V14.7332C14.4844 14.5985 14.4844 14.4806 14.4676 14.3627C14.4002 13.3355 14.6191 12.3083 15.1917 11.4664C16.3367 9.74875 16.8924 7.34073 16.8419 4.30965V3.53505C16.8419 2.7436 16.2525 2.05319 15.4779 2.00267Z" fill="currentColor"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Allo™</span></div></div></a><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/?tab=portfolio"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Portfolio</span></div></div></a><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/buy"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg fill="none" height="17" viewBox="0 0 18 17" width="18" xmlns="http://www.w3.org/2000/svg" class="size-5 stroke-2"><path d="M11.5371 13.9443L9.43164 16.6904L9.00098 16.4414H9V12.3906L11.5371 13.9443ZM14.7695 9.72754L12.2314 13.0381L9 11.0596V6.19531L14.7695 9.72754ZM14.7695 3.53223L18.001 5.51172L15.4629 8.82227V8.82129L9 4.86426V0L14.7695 3.53223Z" fill="currentColor"></path><path d="M9.00098 16.4434L8.99609 16.4414L8.56641 16.6885L6.46289 13.9443L9.00098 12.3906V16.4434ZM9.00098 11.0596L5.76855 13.0381L3.23145 9.72754L9.00098 6.19531V11.0596ZM9.00098 4.86426L2.53711 8.82129V8.82227L0 5.51172L3.23145 3.53223L9.00098 0V4.86426Z" fill="currentColor"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Buy/Stake</span></div></div></a><hr class="mx-3 my-2 border-outline-major"></div><div class="flex flex-col"><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/dashboard"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Dashboard</span></div></div></a><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/reserves"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Reserves</span></div></div></a><hr class="mx-3 my-2 border-outline-major"></div><div class="flex flex-col"><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/borrow"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Borrow</span></div></div></a><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/loans"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Loans</span></div></div></a><hr class="mx-3 my-2 border-outline-major"></div><div class="flex flex-col"><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/help-center"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Help Center</span></div></div></a><a class="relative h-12 md:hover:bg-bg-primary" target="_blank" href="https://docs.usd.ai/"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Docs</span></div></div></a><a class="relative h-12 md:hover:bg-bg-primary" target="_blank" href="https://usd.ai/stories"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">BLOG</span></div></div></a></div></div><!--/$--></div></div></div><div class="flex min-h-8 items-center justify-center gap-1.5 border-b px-4 py-2 md:px-8 border-status-red-300 bg-status-red-50 text-status-red-500 fixed inset-x-0 top-[60px] z-40"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info size-4 shrink-0"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg> <span>Please connect wallet to Contribute</span></div><div class="flex size-full pt-[110px] sm:pt-[98px]"><div class="fixed top-[60px] left-0 z-90 h-[calc(100vh-60px)] border-r border-outline-major bg-bg-page py-8 overflow-x-hidden overflow-y-auto hidden md:block" style="width:60px"><!--$--><div class="flex h-full flex-col"><div class="flex flex-col"><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg" class="size-5 stroke-2"><path d="M8.74087 10.4358C10.6567 10.4358 12.2098 8.88276 12.2098 6.96694C12.2098 5.05112 10.6567 3.49805 8.74087 3.49805C6.82505 3.49805 5.27197 5.05112 5.27197 6.96694C5.27197 8.88276 6.82505 10.4358 8.74087 10.4358Z" fill="currentColor"></path><path d="M15.4779 2.00267C14.6528 1.95215 13.9624 2.62572 13.9624 3.43401V4.30965C14.0129 7.39124 13.3393 9.61403 12.0259 10.7086C11.8575 10.8433 11.6891 10.978 11.5038 11.1127C10.7124 11.6516 9.75256 11.9547 8.72536 11.9547C7.52977 11.9547 6.41838 11.5337 5.55957 10.8265C4.14507 11.5 3 12.7125 3 14.7332V17.2759C3 17.6801 3.31995 18 3.72409 18H13.7603C14.1645 18 14.4844 17.6801 14.4844 17.2759V14.7332C14.4844 14.5985 14.4844 14.4806 14.4676 14.3627C14.4002 13.3355 14.6191 12.3083 15.1917 11.4664C16.3367 9.74875 16.8924 7.34073 16.8419 4.30965V3.53505C16.8419 2.7436 16.2525 2.05319 15.4779 2.00267Z" fill="currentColor"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Allo™</span></div></div></a><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/?tab=portfolio"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Portfolio</span></div></div></a><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/buy"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg fill="none" height="17" viewBox="0 0 18 17" width="18" xmlns="http://www.w3.org/2000/svg" class="size-5 stroke-2"><path d="M11.5371 13.9443L9.43164 16.6904L9.00098 16.4414H9V12.3906L11.5371 13.9443ZM14.7695 9.72754L12.2314 13.0381L9 11.0596V6.19531L14.7695 9.72754ZM14.7695 3.53223L18.001 5.51172L15.4629 8.82227V8.82129L9 4.86426V0L14.7695 3.53223Z" fill="currentColor"></path><path d="M9.00098 16.4434L8.99609 16.4414L8.56641 16.6885L6.46289 13.9443L9.00098 12.3906V16.4434ZM9.00098 11.0596L5.76855 13.0381L3.23145 9.72754L9.00098 6.19531V11.0596ZM9.00098 4.86426L2.53711 8.82129V8.82227L0 5.51172L3.23145 3.53223L9.00098 0V4.86426Z" fill="currentColor"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Buy/Stake</span></div></div></a><hr class="mx-3 my-2 border-outline-major"></div><div class="flex flex-col"><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/dashboard"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Dashboard</span></div></div></a><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/reserves"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Reserves</span></div></div></a><hr class="mx-3 my-2 border-outline-major"></div><div class="flex flex-col"><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/borrow"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Borrow</span></div></div></a><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/loans"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Loans</span></div></div></a><hr class="mx-3 my-2 border-outline-major"></div><div class="flex flex-col"><a class="relative h-12 md:hover:bg-bg-primary" href="https://app.usd.ai/help-center"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Help Center</span></div></div></a><a class="relative h-12 md:hover:bg-bg-primary" target="_blank" href="https://docs.usd.ai/"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">Docs</span></div></div></a><a class="relative h-12 md:hover:bg-bg-primary" target="_blank" href="https://usd.ai/stories"><div class="absolute inset-0 mx-5 flex items-center gap-3"><div class="flex shrink-0 items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-5 stroke-2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z"></path></svg></div><div class="flex-1 overflow-hidden whitespace-nowrap" style="opacity:0"><span class="text-sm uppercase">BLOG</span></div></div></a></div></div><!--/$--></div><main class="flex size-full flex-1 overflow-y-auto" style="scrollbar-gutter:stable"><div class="flex w-full flex-1 justify-center md:ml-[60px] md:w-[calc(100vw-4rem)]"><!--$--><div class="flex h-min w-full justify-center p-4 md:px-8 md:py-9"><div class="flex size-full max-w-360 flex-col gap-4"><div class="flex flex-col items-center gap-5"><div class="flex w-full flex-col gap-3 min-[800px]:flex-row min-[800px]:justify-between"><div class="hidden flex-1 min-[800px]:block"></div><div class="grid w-full grid-cols-4 divide-x divide-outline-major border border-outline-major md:w-fit order-2 mx-auto min-[800px]:order-1" role="tablist" aria-orientation="horizontal"><button class="h-8 cursor-pointer px-1 text-outline-major outline-none md:w-36 md:px-4 text-xs data-selected:bg-secondary data-selected:text-primary-light" id="headlessui-tabs-tab-_R_6b5fiv5ur35db_" role="tab" type="button" aria-selected="false" tabindex="-1" data-headlessui-state="" aria-controls="headlessui-tabs-panel-_R_d5fiv5ur35db_">Allo™</button><button class="h-8 cursor-pointer px-1 text-outline-major outline-none md:w-36 md:px-4 text-xs data-selected:bg-secondary data-selected:text-primary-light" id="headlessui-tabs-tab-_R_ab5fiv5ur35db_" role="tab" type="button" aria-selected="false" tabindex="-1" data-headlessui-state="" aria-controls="headlessui-tabs-panel-_R_l5fiv5ur35db_">Portfolio</button><button class="h-8 cursor-pointer px-1 text-outline-major outline-none md:w-36 md:px-4 text-xs data-selected:bg-secondary data-selected:text-primary-light" id="headlessui-tabs-tab-_R_eb5fiv5ur35db_" role="tab" type="button" aria-selected="true" tabindex="0" data-headlessui-state="selected" aria-controls="headlessui-tabs-panel-_R_t5fiv5ur35db_" data-selected="">Team</button><button class="h-8 cursor-pointer px-1 text-outline-major outline-none md:w-36 md:px-4 text-xs data-selected:bg-secondary data-selected:text-primary-light" id="headlessui-tabs-tab-_R_ib5fiv5ur35db_" role="tab" type="button" aria-selected="false" tabindex="-1" data-headlessui-state="" aria-controls="headlessui-tabs-panel-_R_155fiv5ur35db_">Leaderboard</button></div><div class="order-1 flex flex-1 justify-end gap-3 text-text-secondary min-[800px]:order-2"><a class="flex items-center gap-1 text-sm text-text-secondary" href="https://app.usd.ai/tutorial"><span class="whitespace-nowrap">Tutorial Video</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mb-1 size-4"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div><div class="border flex w-full flex-col justify-between border-outline-major p-0 md:p-0"><div class="flex w-full flex-col justify-between gap-4 p-3 md:flex-row md:px-5 md:py-4.5"><div class="flex items-center gap-3.5"><svg fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg" class="size-10 shrink-0"><rect class="fill-bg-primary" height="40" rx="5.26368" width="40"></rect><path class="fill-secondary" d="M18.7269 20.5232C20.991 20.5232 22.8264 18.6878 22.8264 16.4237C22.8264 14.1596 20.991 12.3242 18.7269 12.3242C16.4629 12.3242 14.6274 14.1596 14.6274 16.4237C14.6274 18.6878 16.4629 20.5232 18.7269 20.5232Z"></path><path class="fill-secondary" d="M26.6872 10.5481C25.7121 10.4884 24.8961 11.2844 24.8961 12.2396V13.2744C24.9558 16.9162 24.1598 19.5431 22.6076 20.8366C22.4086 20.9958 22.2096 21.155 21.9907 21.3142C21.0553 21.9511 19.921 22.3093 18.7071 22.3093C17.2942 22.3093 15.9807 21.8118 14.9658 20.9759C13.2942 21.772 11.9409 23.2048 11.9409 25.5929V28.5978C11.9409 29.0754 12.319 29.4535 12.7966 29.4535H24.6573C25.1349 29.4535 25.5131 29.0754 25.5131 28.5978V25.5929C25.5131 25.4336 25.5131 25.2943 25.4932 25.155C25.4136 23.9411 25.6723 22.7272 26.3489 21.7322C27.7021 19.7023 28.3588 16.8565 28.2991 13.2744V12.359C28.2991 11.4237 27.6026 10.6078 26.6872 10.5481Z"></path></svg><div class="flex items-end gap-3.5"><div class="hidden sm:inline-flex group hidden sm:block" role="button" tabindex="0" data-state="closed"><span class="font-eiko text-2xl font-medium md:text-3xl">--</span></div><div class="inline-flex cursor-pointer sm:hidden" role="button" tabindex="0"><span class="font-eiko text-2xl font-medium md:text-3xl">--</span></div><div class="flex items-center gap-2"><span class="text-lg font-medium text-text-secondary">Team Allo™</span><div class="hidden sm:inline-flex group hidden sm:block" role="button" tabindex="0" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-4 shrink-0 text-text-secondary"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"></path></svg></div><div class="inline-flex cursor-pointer sm:hidden" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="size-4 shrink-0 text-text-secondary"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"></path></svg></div></div></div><div class="flex min-w-28 items-center justify-center rounded-full bg-outline-major px-4 py-1.5 whitespace-nowrap text-bg-page max-sm:px-1.5 max-sm:text-xs md:min-w-32 ml-2.5 max-md:hidden"><span>No Alignment</span></div></div><div class="flex items-center gap-2"><div class="flex min-w-28 items-center justify-center rounded-full bg-outline-major px-4 py-1.5 whitespace-nowrap text-bg-page max-sm:px-1.5 max-sm:text-xs md:min-w-32 md:hidden"><span>No Alignment</span></div></div></div></div></div><div><span aria-hidden="true" id="headlessui-tabs-panel-_R_d5fiv5ur35db_" role="tabpanel" aria-labelledby="headlessui-tabs-tab-_R_6b5fiv5ur35db_" tabindex="-1" style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"></span><span aria-hidden="true" id="headlessui-tabs-panel-_R_l5fiv5ur35db_" role="tabpanel" aria-labelledby="headlessui-tabs-tab-_R_ab5fiv5ur35db_" tabindex="-1" style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"></span><div class="flex flex-col gap-5 lg:flex-row" id="headlessui-tabs-panel-_R_t5fiv5ur35db_" role="tabpanel" aria-labelledby="headlessui-tabs-tab-_R_eb5fiv5ur35db_" tabindex="0" data-headlessui-state="selected" data-selected=""><div class="connect-wallet w-full flex-col border border-outline-major p-6 md:p-8 flex h-80 items-center justify-center text-base text-text-secondary"><span class="connect-wallet text-base">Connect wallet to see team members.</span><button type="button" class="connect-wallet btn btn-normal outline-hidden disabled:cursor-not-allowed inline-flex h-full btn-secondary cursor-pointer items-center gap-1 px-5 py-[6px] text-sm font-medium whitespace-nowrap lg:px-6">Connect Wallet</button></div></div><span aria-hidden="true" id="headlessui-tabs-panel-_R_155fiv5ur35db_" role="tabpanel" aria-labelledby="headlessui-tabs-tab-_R_ib5fiv5ur35db_" tabindex="-1" style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"></span></div></div></div><!--/$--><!--$--><!--/$--></div></main></div></div><!--/$--><title>Rewards | USD AI</title><meta name="description" content="The yield-bearing synthetic dollar backed by AI infrastructure."><link rel="manifest" href="https://app.usd.ai/favicon/site.webmanifest"><meta name="robots" content="index, follow"><meta property="og:title" content="USD AI"><meta property="og:description" content="The yield-bearing synthetic dollar backed by AI infrastructure."><meta property="og:url" content="https://app.usd.ai"><meta property="og:site_name" content="USD AI"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://app.usd.ai/images/og_image.png"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="USD AI"><meta name="twitter:description" content="The yield-bearing synthetic dollar backed by AI infrastructure."><meta name="twitter:image" content="https://app.usd.ai/images/og_image.png"><link rel="shortcut icon" href="favicon-16x16.png"><next-route-announcer style="position: absolute;" data-scrapbook-shadowdom="&lt;div aria-live=&quot;assertive&quot; id=&quot;__next-route-announcer__&quot; role=&quot;alert&quot; style=&quot;position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;&quot;&gt;&lt;/div&gt;"></next-route-announcer><iframe width="0" height="0" style="display: none; height: 0px; width: 0px;" src="index_1.html"></iframe><w3m-modal style="--local-border-bottom-mobile-radius: 0px;" data-scrapbook-adoptedstylesheets="0" data-scrapbook-shadowdom="&lt;!----&gt;"></w3m-modal><script data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", k8 = "data-scrapbook-adoptedstylesheets", k9 = /^data-scrapbook-adoptedstylesheet-(\d+)$/, k10 = "data-scrapbook-shadowdom-mode", k11 = "data-scrapbook-shadowdom-clonable", k12 = "data-scrapbook-shadowdom-delegates-focus", k13 = "data-scrapbook-shadowdom-serializable", k14 = "data-scrapbook-shadowdom-slot-assignment", k15 = "data-scrapbook-slot-assigned", k16 = "data-scrapbook-slot-index", k17 = /^scrapbook-slot-index=(\d+)$/, k18 = '/scrapbook-slot-index', d = document, r = d.documentElement, $s = !!r.attachShadow, $as = !!d.adoptedStyleSheets, $c = !!window.HTMLCanvasElement, $sa = !!d.createElement('slot').assign, sle = [], sls = [], slt = function (r) { if ($sa) { var E = r.childNodes, i, e, s, m; for (i = 0; i < E.length; i++) { e = E[i]; if (e.nodeType === 8) { s = e.nodeValue; if (m = s.match(k17)) { s = e.nextSibling; if (s.nodeType === 3) { sls[m[1]] = s; } r.removeChild(e); i--; } else if (s === k18) { r.removeChild(e); i--; } } } } }, sl = function () { var i = sle.length, j, d, e; while (i--) { d = sle[i]; e = d.elem; d = d.value.split(','); j = d.length; while (j--) { d[j] = sls[parseInt(d[j], 10)]; } try { try { e.assign.apply(e, d); } catch (ex) { if (ex.message.includes('must have a callable @@iterator')) { e.assign(d); } else { throw ex; } } } catch (ex) { console.error(ex); } } }, asl = (function (r) { var l = [], E, i, e, m, c, j; if ($as) { E = r.attributes; i = E.length; while (i--) { e = E[i]; if (!(m = e.nodeName.match(k9))) { continue; } c = l[m[1]] = new CSSStyleSheet(); r.removeAttribute(m[0]); m = e.nodeValue.split('\n\n'); j = m.length; while (j--) { try { m[j] && c.insertRule(m[j]); } catch (ex) { console.error(ex); } } } } return l; })(r), as = function (d, e) { var l, i, I; if ($as && (l = e.getAttribute(k8)) !== null) { l = l.split(',').map(i => asl[i]); d.adoptedStyleSheets = d.adoptedStyleSheets.concat(l); e.removeAttribute(k8); } }, fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s, m; while (i--) { e = E[i]; s = e.shadowRoot; if ($s && (d = e.getAttribute(k1))) { if (!s) { try { s = e.attachShadow({ mode: (m = e.getAttribute(k10)) !== null ? m : 'open', clonable: e.hasAttribute(k11), delegatesFocus: e.hasAttribute(k12), serializable: e.hasAttribute(k13), slotAssignment: (m = e.getAttribute(k14)) !== null ? m : void 0, }); s.innerHTML = d; } catch (ex) { console.error(ex); } } e.removeAttribute(k1); e.removeAttribute(k10); e.removeAttribute(k11); e.removeAttribute(k12); e.removeAttribute(k13); e.removeAttribute(k14); } if ($c && (d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if ($sa && (d = e.getAttribute(k15)) !== null) { sle.push({elem: e, value: d}); e.removeAttribute(k15); } if ($sa && (d = e.getAttribute(k16)) !== null) { sls[d] = e; e.removeAttribute(k16); } if (s) { slt(e); as(s, e); fn(s); } } }; as(d, r); fn(d); sl(); })()</script></body></html>
